@@ -12,16 +12,20 @@
     --white:#fff;
     --yellow:#ffe400;
     --black:#000;
+    --pink:rgb(249,40,89);
+    --blue:rgb(28,135,251);
 }
 html {
     font-family: Arial, Helvetica, sans-serif;
 }
-
+body{
+    background-color: var(--separator-color);
+}
 h2{
     color: var(--black);
 }
 p{
-    font-size: 1rem;
+    font-size: 1.2rem;
 }
  h2:hover{
      text-decoration: underline;
@@ -51,7 +55,8 @@ p{
 .subscribe-button,
 .news__title h4,
 .category-button,
-h2{
+h2,
+h3{
     font-family: 'Roboto Condensed',
     sans-serif;
 }
@@ -102,4 +107,54 @@ h2{
     display: block;
     /* adjust 'height' to position overlay content vertically */
     height: 50%;
+}
+
+.red-border{
+    border:3px solid var(--pink);
+}
+
+.blue-border{
+    border:3px solid var(--blue);
+}
+
+.double-lines{
+    border-top: 1px solid var(--dark-gray);
+    
+}
+
+.versus {
+    position: relative;
+    text-align: center;
+}
+
+.versus-logo {
+    position: relative;
+    z-index: 1;
+    width: 32px;
+    height: 32px;
+    background-color: #000;
+    color: #d6d6d6;
+    border-radius: 50%;
+    font: bold 14px/32px "Roboto Condensed", sans-serif;
+    text-align: center;
+    margin: 6px auto;
+}
+
+.versus::before,
+.versus::after {
+    content: "";
+    display: block;
+    background-color: #d9d9d9;
+    height: 1px;
+    position: absolute;
+    left: 0;
+    right: 0;
+}
+
+.versus::after {
+    top: 50%;
+}
+
+.versus::before {
+    top: calc(50% - 2px);
 }
