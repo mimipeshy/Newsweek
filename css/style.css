@@ -310,11 +310,15 @@ h4,
 .extra-info{
     font-weight: 100;
 }
+ .subscribe-images {
+     background-color: var(--separator-color);
+     padding: 15px 0 35px 35px;
+
+ }
 @media screen and (min-width: 768px) {
     .subscribe-images {
-        background-color: #eee;
-        padding: 15px 0 235px 15px;
-    }
-    
+       
+        text-align: left;
+    }   
  
 }
