@@ -1,5 +1,5 @@
 :root {
-    --main-color: rgb(255,5,0);
+    --main-color: rgb(255, 5, 0);
     --heading-color: rgba(3, 3, 3, 0.4);
     --primary-font: 'Roboto Condensed', sans-serif;
     --secondary-font: Arial, sans-serif;
@@ -9,63 +9,69 @@
     --washed-out-background: #f4f5f6;
     --light-gray: #d9d9d9;
     --dark-gray: #9a9a9a;
-    --white:#fff;
-    --yellow:#ffe400;
-    --black:#000;
-    --pink:rgb(249,40,89);
-    --blue:rgb(28,135,251);
+    --white: #fff;
+    --yellow: #ffe400;
+    --black: #000;
+    --pink: rgb(249, 40, 89);
+    --blue: rgb(28, 135, 251);
 }
+
 html {
     font-family: Arial, Helvetica, sans-serif;
 }
-body{
+
+body {
     background-color: var(--separator-color);
     background-color: #f4f5f6;
     color: #333;
     font-size: 13px;
     line-height: 18px;
-    font-family: Arial,
-    Helvetica,
-    sans-serif;
-    overflow-x: hidden;
+  font-family: 'Roboto Condensed',
+  sans-serif;
 }
-h2{
+
+h2 {
     color: var(--black);
 }
 
-p{
+p {
     font-size: 1.2rem;
 }
-h1{
+
+h1 {
     font-size: 1.5rem;
 }
- h2:hover{
-     text-decoration: underline;
-     text-decoration-color: var(--main-color);
-     cursor: pointer;
- }
 
- h3:hover{
-     color: var(--black);
-     text-decoration: none;
-     text-decoration-color: var(--blue);
-     cursor: pointer;
- }
- h4,
- .category-button{
-     font-family: Arial;
- }
+h2:hover {
+    text-decoration: underline;
+    text-decoration-color: var(--main-color);
+    cursor: pointer;
+}
+
+h3:hover {
+    color: var(--black);
+    text-decoration: none;
+    text-decoration-color: var(--blue);
+    cursor: pointer;
+}
+
+h4,
+.category-button {
+    font-family: Arial;
+}
+
 .top-container {
     background-color: var(--main-color);
-    padding:0;
-    margin:0;
+    padding: 0;
+    margin: 0;
 }
 
 .icons {
-    font-size: 2rem; 
-    color:var(--washed-out-background);   
+    font-size: 2rem;
+    color: var(--washed-out-background);
 }
-.login-button{
+
+.login-button {
     border: none;
     font-size: 1rem;
 }
@@ -77,39 +83,46 @@ h1{
 .category-button,
 .category,
 .block-title,
+.extra-button,
 h1,
 h2,
 h3,
 h5,
 h4,
-.letter-title{
+.letter-title {
     font-family: 'Roboto Condensed',
-    sans-serif;
+        sans-serif;
 }
 
-.subscribe-button{
-    padding:4px;
+.subscribe-button {
+    padding: 4px;
     background-color: var(--yellow);
-    color: var(--black);   
+    color: var(--black);
 }
 
 .news__title h4,
-.heroes__title{
-    color:var(--dark-gray);   
+.heroes__title {
+    color: var(--dark-gray);
 
 }
-.article-category{
+
+.article-category {
     position: absolute;
-    bottom:214px;
-    
+    bottom: 214px;
+
 }
 
-.category-button{
+.category-button {
     color: var(--main-color);
 }
 
-.top-story{
+.top-story {
     border-bottom: 3px solid var(--dark-gray);
+}
+
+.img-resize{
+    height: 95px;
+    width: 95px;
 }
 
 .featured-story {
@@ -117,8 +130,9 @@ h4,
     min-height: 33px;
     margin-bottom: 10px;
 }
+
 .category {
-    font-size: 1.5rem ;
+    font-size: 1.5rem;
     padding: 8px 15px 9px;
     background-color: rgba(255, 255, 255, .9);
     position: absolute;
@@ -126,23 +140,24 @@ h4,
     left: 0;
     z-index: 1;
 }
-.category a{
-  color:var(--main-color);
-  text-decoration: none;
+
+.category a {
+    color: var(--main-color);
+    text-decoration: none;
 }
 
 
-.red-border{
-    border:3px solid var(--pink);
+.red-border {
+    border: 3px solid var(--pink);
 }
 
-.blue-border{
-    border:3px solid var(--blue);
+.blue-border {
+    border: 3px solid var(--blue);
 }
 
-.double-lines{
+.double-lines {
     border-top: 1px solid var(--dark-gray);
-    
+
 }
 
 .versus {
@@ -182,46 +197,48 @@ h4,
     top: calc(50% - 2px);
 }
 
-.border-bottom{
+.border-bottom {
     border: 1px double var(--light-gray);
 }
 
 .media h3:hover {
-   color: var(--pink);
+    color: var(--pink);
     cursor: pointer;
 }
 
-.newsletter{
-    max-width: 400px;
-    margin: 0 auto 30px;
+.newsletter-container{
+    max-width: 100%;
+    margin-bottom: 30px;
     border: 1px solid #e5e5e5;
     background-color: #f4f5f6;
-    padding: 20px;
+    padding: 15px;
 }
-
-.magazine-logo{
+.magazine-logo {
     max-width: 300px;
-    margin:0 auto 30px;
-    padding:20px;
-    
+    margin: 0 auto 30px;
+    padding: 20px;
+
 }
 
-.media-body h1{
+.media-body h1 {
     font-size: 1.7rem;
 }
+
 .letter-title {
     font-size: 1.4rem;
     margin-bottom: 15px;
     text-transform: uppercase;
-    
+
 }
-.icon-n{
+
+.icon-n {
     width: 29px;
     height: 28px;
     background: url(https://g.newsweek.com/www/images/logo-n1.svg) center/contain no-repeat #f72210;
     margin-right: 10px;
-    
+
 }
+
 .newsletter .free-signup input {
     width: 100%;
     height: 32px;
@@ -263,18 +280,18 @@ h4,
     width: 100%;
 } */
 
-.featured-links a:first-of-type{
+.featured-links a:first-of-type {
     background-color: var(--main-color);
     font-size: 1.5rem;
-    color:var(--white);
-    text-decoration:none;
-    
+    color: var(--white);
+    text-decoration: none;
+
 }
 
-.featured-links a:last-of-type{
+.featured-links a:last-of-type {
     font-size: 1.5rem;
-    color:var(--main-color);
-   
+    color: var(--main-color);
+
 }
 
 .block-title.red {
@@ -285,10 +302,13 @@ h4,
     padding-bottom: 11px;
 }
 
-.subscribe-img{
+.border-none{
+    border: none;
+}
+.subscribe-img {
     position: relative;
-     /* vertical-align: middle;
-     border-style: none; */
+    width: 170px;
+    height: 228px;
 }
 
 .mag-thumb-current {
@@ -298,27 +318,162 @@ h4,
     height: 227px;
 }
 
-
-.subscribe-text h3{
-    color: #000;
-    font-size: 18px;
-    font-weight: 700;
-    line-height: 1.2;
-    padding: 5px 0;
-    display: inline-block;
+.subscribe-title{
+    align-self: center;
+    text-align: center;
+    width: 90%;
+    z-index: 1;
 }
-.extra-info{
+
+.subscribe-title h3 {
+    font-size: 2rem;
+    color: #000;
+    font-weight: 700;
+    margin-bottom: 20px;
+
+}
+
+.subscribe-title p {
+    line-height: 18px;
+    margin-bottom: 20px;
+    color: #333;
+    font-size: 13px;
+}
+.extra-info {
     font-weight: 100;
 }
- .subscribe-images {
-     background-color: var(--separator-color);
-     padding: 15px 0 35px 35px;
 
- }
+.subscribe-container {
+    background-color: var(--separator-color);
+    padding: 15px 0px 0px 35px;
+    height: 400px;
+}
+
+.extra-button {
+    position: relative;
+    font: bold 18px/18px "Roboto Condensed",
+        sans-serif;
+    cursor: pointer;
+    background-color: var(--main-color);
+    color: white;
+    padding: 10px 10px 10px 12px;
+
+}
+
+.newsletter-section {
+    border: 1px solid #eee;
+    padding: 20px;
+
+}
+
+.news-info {
+    margin: 0 auto 30px;
+    border: 1px solid #e5e5e5;
+    background-color: #f4f5f6;
+    padding: 20px;
+}
+
+.form-input {
+    width: 100%;
+    height: 50px;
+    line-height: 38px;
+    color: #555;
+    font-size: 14px;
+    font-family: "Helvetica",
+        sans-serif;
+    background-color: white;
+    border: 1px solid #e0e1e1;
+    text-indent: 9px;
+
+}
+
+footer {
+    background-color: #fff;
+    padding: 20px;
+    font-weight: 400;
+}
+
+.footer-brand svg {
+    display: block;
+    width: 236px;
+    height: 36px;
+    margin-right: 15px;
+    margin-bottom: 12px;
+    fill: var(--main-color);
+}
+
+.copyright {
+    font-size: 18px;
+    line-height: 12px;
+    text-transform: uppercase;
+    color: #666;
+    margin-bottom: 12px;
+}
+
+.ai-fe {
+    align-items: flex-end;
+}
+
+.footer-links-social {
+    color: #666;
+    margin-bottom: 12px;
+}
+
+.footer-links-social li {
+    margin-left: 20px;
+}
+
+.footer-links-social li:first-child {
+    margin-left: 0;
+}
+
+.social {
+    font-size: 2.1rem;
+
+}
+
+.footer-editions{    
+    border-top: 3px solid #d9d9d9;
+    padding-top: 6px;
+    font-size: 20px;
+    line-height: 15px;
+    color: #666;
+}
+
+.editions li {
+    display: inline-block;
+    padding-right: 20px;
+    margin: 6px 0;
+    cursor: pointer;
+}
+.footer-editions a{
+    color: #555;
+    text-decoration: none;
+    text-decoration-color:none;
+}
+li.leaf {
+    list-style: none;
+    margin: 0;
+    padding: 4px;
+}
+
+.sign-up-img {
+  width: 48%;
+  max-width: 191px;
+  /* background-image: url(../images/starting5-homepage.png);
+  background-size: cover;
+  background-position: center; */
+  background: url("https://d.newsweek.com/en/full/1541302/starting5-homepage.png?w=397&h=265&q=90&f=742bce9a6f72dd8f19ba2e7fd5db06e5") center center / cover no-repeat;
+}
+
 @media screen and (min-width: 768px) {
-    .subscribe-images {
-       
+
+    .subscribe-images,
+    .left-align {
         text-align: left;
-    }   
- 
+    }
+    .news-img{
+        display: none;
+    }
+    
 }
