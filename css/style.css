@@ -11,8 +11,6 @@
   --white: #fff;
   --yellow: #ffe400;
   --black: #000;
-  --pink: rgb(249, 40, 89);
-  --blue: rgb(28, 135, 251);
 }
 
 html {
@@ -36,17 +34,17 @@ p {
   font-size: 0.9rem;
 }
 
-h1 {
-  font-size: 1.5rem;
+.card-body h2 {
+  font-size: 1.3rem;
 }
 
-h4 {
-  font-size: 0.3rem;
-}
-
-h2 {
+.media h2 {
   color: var(--black);
-  font-size: 0.9rem;
+  font-size: 1rem;
+}
+
+.heroes__title h1 {
+  font-size: 1.5rem;
 }
 
 h2:hover {
@@ -362,6 +360,8 @@ nav::before {
   color: #000;
   font-weight: 700;
   margin-bottom: 20px;
+
+  /* position: relative; */
 }
 
 .media h3:hover {
@@ -627,41 +627,45 @@ li.leaf {
   .social-icons {
     margin-left: 45px;
   }
-}
-
-@media (max-width: 1023px) {
-  .nav-subscribe,
-  .weather,
-  nav {
-    display: none;
-  }
-
-  main {
-    margin-top: 15px;
-  }
-}
-
-@media only screen and (min-width: 1023px) {
-  .navbar-logo svg {
-    fill: #fff;
-    width: 396px;
-    height: 60px;
-  }
-
-  nav {
-    margin-top: 90px;
-  }
-
-  .menu-button {
-    display: none;
-  }
-
-  .sign-up-container {
-    margin-top: 35px;
-  }
 
   .subscribe-title {
-    max-width: 250px;
-    margin-left: 30px;
+    padding-left: 30px;
+  }
+
+  @media (max-width: 1023px) {
+    .nav-subscribe,
+    .weather,
+    nav {
+      display: none;
+    }
+
+    main {
+      margin-top: 15px;
+    }
+  }
+
+  @media only screen and (min-width: 1023px) {
+    .navbar-logo svg {
+      fill: #fff;
+      width: 396px;
+      height: 60px;
+    }
+
+    nav {
+      margin-top: 90px;
+    }
+
+    .menu-button {
+      display: none;
+    }
+
+    .sign-up-container {
+      margin-top: 35px;
+    }
+
+    .subscribe-title {
+      max-width: 250px;
+      margin-left: 10px;
+    }
   }
 }
