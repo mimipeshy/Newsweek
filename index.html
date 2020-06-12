@@ -17,7 +17,7 @@
 <body>
     <header class="container-fluid">
         <div class="top-navbar row align-items-center">
-            <div class="weather">
+            <div class="weather d-lg-block">
                 <a href="#">
                     <img src="images/29.png" alt="">
                     <span>24° Nairobi, Kenya <br> </span>
@@ -38,7 +38,7 @@
                 </a>
             </div>
             <div class="navbar-buttons ">
-                <button class="login-button">
+                <button class="login-button d-lg-inline-block">
                     <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"
                         id="Layer_2" x="0px" y="0px" width="16px" height="16px" viewBox="0 0 16 16"
                         style="enable-background:new 0 0 16 16;" xml:space="preserve">
@@ -47,12 +47,12 @@
                                 d="M8,7c1.104,0,2-0.896,2-2S9.104,3,8,3S6,3.896,6,5S6.896,7,8,7z M9,8H7c-1.656,0-3,1.343-3,3v2h8v-2   C12,9.343,10.656,8,9,8z" />
                         </g>
                     </svg>
-                    <span class="button-text d-none d-sm-inline-block">LOGIN</span>
+                    <span class="button-text small-login">LOGIN</span>
                 </button>
                 <button class="nav-subscribe d-inline-block">
                     SUBSCRIBE >
                 </button>
-                <button class="menu-button">
+                <button class="menu-button d-lg-inline-block">
                     <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="bars"
                         class="svg-inline--fa fa-bars fa-w-14" role="img" xmlns="http://www.w3.org/2000/svg"
                         viewBox="0 0 448 512">
@@ -80,8 +80,8 @@
             </ul>
         </nav>
     </header>
-    <main class="container-fluid">
-        <div class="row">
+    <main class="container-fluid main-content align-items-center">
+        <div class="row main-content">
             <div class="col-sm-12 col-md-7 order-md-2 col-lg-6 order-lg-2 d-md-none top-story">
                 <div class="news__title align-content-center m-2 p-1">
                     <h4>TOP STORY</h4>
@@ -209,7 +209,6 @@
                                 <img class="card-img-top image-responsive" src="images/george-floyd-protest.jpg"
                                     alt="new york riots">
                             </div>
-
                         </div>
                         <div class="card-body">
                             <h2 class="card-title font-weight-bold">Georgia Official Says Police Should
@@ -224,159 +223,147 @@
                         </div>
                     </div>
                 </div>
-            </div>
-            <section class="debate-section col-sm-12 col-md-12 order-md-4 col-lg-2 order-lg-3">
-                <div class="row">
-                    <div class="debate sticky container-fluid">
-                        <div class=" debate-title mt-4">
-                            <h3 class="text-muted"> THE DEBATE</h3>
-                            <div class="red-border"></div>
-                        </div>
-                        <div class="debate-topic-1 row align-items-center">
-                            <div class="debate-topic-img-1">
-                                <a href="#"><img src="images/nigel-farage.png" alt="debate-topic-img-1"></a>
-                            </div>
-                            <div class="debate-text">
-                                <div class="debate-topic-content-1">
-                                    <a href="#">Respond to Coronavirus
-                                        With More
-                                        Nationalism</a>
-                                </div>
-                                <div class="debator">
-                                    <a href="#">BY <b>NIGEL FARAGE</b></a>
-                                </div>
-                            </div>
-                        </div>
 
+            </div>
+            <section
+                class="debate-section col-sm-12 col-md-12 order-md-4 col-lg-3 order-lg-3 justify-content-space-between">
+                <div class="row">
+                    <div class="debate container-fluid">
+                        <div class=" debate-title mt-4 red-border">
+                            <h5 class="text-muted"> THE DEBATE</h5>
+                        </div>
+                        <div class="media mt-4 mb-2 d-flex">
+                            <img class="align-self-start mr-3 img-resize" src="images/nigel-farage.png"
+                                alt="Generic placeholder image">
+                            <div class="font-weight-bold debate-title">
+                                <h5 class="mt-0 font-weight-bold">Respond to Coronavirus
+                                    With More
+                                    Nationalism
+                                </h5>
+                                <small class="font-weight-bold">BY NIGEL FARAGE</small>
+                            </div>
+                        </div>
                         <div class="versus">
                             <div class="versus-logo">
                                 VS
                             </div>
                         </div>
-                        <div class="debate-topic-2 row align-items-center">
-                            <div class="debate-topic-img-2">
-                                <a href="#"><img src="images/marianne-williamson.png"
-                                        alt="Generic placeholder image"></a>
-                            </div>
-                            <div class="debate-text">
-                                <div class="debate-topic-content-2">
-                                    <a href="#">Respond to Coronavirus With More
-                                        Globalism</a>
-                                </div>
-                                <div class="debator">
-                                    <a href="#">BY <b>MARIANNE WILLIAMSON</b></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <article class="border-none">
-                        <div class=" debate-title mt-4">
-                            <h3 class="text-muted"> OPINIONS</h3>
-                        </div>
-                        <div class="media mt-4 mb-2 d-flex">
-                            <img class="align-self-start mr-3" src="images/mark-mccoy.png"
-                                alt="Generic placeholder image">
-                            <div class="font-weight-bold">
-                                <h5 class="mt-0 font-weight-bold">I Was Arrested
-                                    for Same as
-                                    George Floyd. I
-                                    Lived. That's White Privilege
+                        <div class="media mt-4 mb-2 pb-2 d-flex blue-border">
+                            <div class="font-weight-bold debate-title">
+                                <h5 class="mt-0 font-weight-bold">Respond to Coronavirus
+                                    With More
+                                    Nationalism
                                 </h5>
-                                BY MARK MCCOY
+                                <small class="font-weight-bold">BY MARIANNE WILLIAMSON</small>
                             </div>
-                        </div>
-                        < </article> -->
-                            <div class=" border-none d-flex">
-                                <div class="media mt-4 mb-2">
-                                    <img class="align-self-start mr-3" src="images/john-yoo-robert-delahunty.png"
-                                        alt="Generic placeholder image">
-                                    <div class="media-body font-weight-bold">
-                                        <h5 class="mt-0 align-self-center font-weight-bold">Domestic Military Use Is
-                                            Lawful but Not
-                                            Yet
-                                            Prudent
-                                        </h5>
-                                        BY JOHN YOO AND ROBERT DELAHUNTY
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="border-none">
-                                <div class="media mt-4 mb-2">
-                                    <img class="d-flex align-self-start mr-3" src="images/ann-olivarius.png"
-                                        alt="Generic placeholder image">
-                                    <div class="media-body font-weight-bold">
-                                        <h5 class="mt-0 align-self-center font-weight-bold">Trump's Reasons for
-                                            Targeting Social
-                                            Media
-                                            Are Wrong. But It's Right to Do
-                                        </h5>
-                                        BY ANN OLIVARIUS
-                                    </div>
-                                </div>
-                                <div>
-                                    <div class="border-none">
-                                        <div class="media mt-4 mb-2">
-                                            <img class="d-flex align-self-start mr-3" src="images/anna-wang.png"
-                                                alt="Generic placeholder image">
-                                            <div class="media-body font-weight-bold">
-                                                <h5 class="mt-0 align-self-center font-weight-bold">I Witnessed
-                                                    Tiananmen
-                                                    Square. COVID-19
-                                                    Makes
-                                                    Me Fear for China Even More
-                                                </h5>
-                                                BY ANNA WANG
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="border-none">
-                                        <div class="media mt-4 mb-2">
-                                            <img class="d-flex align-self-start mr-3" src="images/daniel-pipes.png"
-                                                alt="Generic placeholder image">
-                                            <div class="media-body font-weight-bold">
-                                                <h5 class="mt-0 align-self-center font-weight-bold">A Reluctant but
-                                                    Unhesitating Vote for
-                                                    Donald
-                                                    Trump
-                                                </h5>
-                                                BY DANIEL PIPES
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="border-none">
-                                        <div class="media mt-4 mb-2">
-                                            <img class="d-flex align-self-start mr-3" src="images/barbara-bollier.png"
-                                                alt="Generic placeholder image">
-                                            <div class="media-body">
-                                                <h5 class="mt-0 align-self-center font-weight-bold">I'm a Kansas
-                                                    Lawmaker
-                                                    and Doctor.
-                                                    Wearing a
-                                                    Mask Isn't About Politics
-                                                </h5>
-                                                BY BARBARA BOLLIER
-                                            </div>
-                                        </div>
-                                    </div>
-                    </article>
-                    <div class="media mt-4 col-md-4 newsletter d-md-none">
-                        <img class="d-flex align-self-start mr-3 icon-n "
-                            src="https://g.newsweek.com/www/images/logo-n1.svg" alt="Generic placeholder image">
-                        <div class="media-body">
-                            <h1 class="mt-0 font-weight-bold letter-title d-flex align-items-center">
-                                Start your day with our top 5
-                                articles</h1>
-                            <form class="free-signup">
-                                <input type="text" class="form-text" placeholder="Email Address">
-                                <input type="submit" class="form-submit" value="Free Signup">
-                            </form>
-
+                            <img class="align-self-start mr-3 img-resize" src="images/marianne-williamson.png"
+                                alt="Generic placeholder image">
                         </div>
                     </div>
                 </div>
+                <article class="border-none">
+                    <div class=" debate-title mt-4 red-border">
+                        <h3 class="text-muted"> OPINIONS</h3>
+                    </div>
+                    <div class="media mt-4 mb-2 pb-2 d-flex separator">
+                        <img class="align-self-start mr-3" src="images/mark-mccoy.png" alt="Generic placeholder image">
+                        <div class="font-weight-bold debate-title">
+                            <h5 class="mt-0 font-weight-bold">I Was Arrested
+                                for Same as
+                                George Floyd. I
+                                Lived. That's White Privilege
+                            </h5>
+                            <small class="font-weight-bold">BY MARK MCCOY</small>
+                        </div>
+                    </div>
+                </article>
+
+                <div class="border-none">
+                    <div class="media mt-4 mb-2 pb-2 separator">
+                        <img class="d-flex align-self-start mr-3" src="images/john-yoo-robert-delahunty.png"
+                            alt="Generic placeholder image">
+                        <div class="media-body font-weight-bold debate-title">
+                            <h5 class="mt-0 align-self-center font-weight-bold">Domestic Military Use Is
+                                Lawful but Not
+                                Yet
+                                Prudent
+                            </h5>
+                            <small class="font-weight-bold">BY JOHN YOO</small>
+                        </div>
+                    </div>
+                </div>
+                <div class="border-none">
+                    <div class="media mt-4 mb-2 pb-2 separator">
+                        <img class="d-flex align-self-start mr-3" src="images/ann-olivarius.png"
+                            alt="Generic placeholder image">
+                        <div class="media-body font-weight-bold debate-title">
+                            <h5 class="mt-0 align-self-center font-weight-bold">Trump's Reasons for
+                                Targeting Social
+                                Media
+                                Are Wrong. But It's Right to Do
+                            </h5>
+                            <small class="font-weight-bold">BY ANN OLIVARIUS</small>
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+                    <div class="border-none">
+                        <div class="media mt-4 mb-2 pb-2 separator">
+                            <img class="d-flex align-self-start mr-3" src="images/anna-wang.png"
+                                alt="Generic placeholder image">
+                            <div class="media-body font-weight-bold debate-title">
+                                <h5 class="mt-0 align-self-center font-weight-bold">I Witnessed
+                                    Tiananmen
+                                    Square. COVID-19
+                                    Makes
+                                    Me Fear for China Even More
+                                </h5>
+                                <small class="font-weight-bold">BY ANNA WANG</small>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="border-none">
+                        <div class="media mt-4 mb-2 pb-2 separator">
+                            <img class="d-flex align-self-start mr-3" src="images/daniel-pipes.png"
+                                alt="Generic placeholder image">
+                            <div class="media-body font-weight-bold debate-title">
+                                <h5 class="mt-0 align-self-center font-weight-bold">A Reluctant but
+                                    Unhesitating Vote for
+                                    Donald
+                                    Trump
+                                </h5>
+                                <small class="font-weight-bold">BY DANIEL PIPES</small>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="border-none">
+                        <div class="media mt-4 mb-2 pb-2 separator">
+                            <img class="d-flex align-self-start mr-3" src="images/barbara-bollier.png"
+                                alt="Generic placeholder image">
+                            <div class="media-body font-weight-bold debate-title">
+                                <h5 class="mt-0 align-self-center font-weight-bold">I'm a
+                                    Kansas Lawmaker and Doctor. Wearing a Mask Isn't About Politics
+                                </h5>
+                                <small class="font-weight-bold">BY BARBARA BOLLIER</small>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="signup-box mt-4 col-md-4 col-lg-11">
+                        <div class="logo-title align-items-center d-flex justify-content-center">
+                            <img class="d-flex align-self-start mr-3 icon-n "
+                                src="https://g.newsweek.com/www/images/logo-n1.svg" alt="Generic placeholder image">
+                            <div>start your day with our top 5 articles</div>
+                        </div>
+                        <form class="mt-3">
+                            <input type="text" placeholder="Email address" />
+                            <button type="submit" class="w-arrow reversed mt-3 text-uppercase">Free Sign Up</button>
+                        </form>
+                    </div>
+                </div>
             </section>
-            <section class="heroes-section sticky col-12 col-md-6 d-flex order-md-2 order-lg-2">
-                <div class="top-story">
+            <section class="heroes-section col-12 col-md-6 d-flex order-md-2 order-lg-2">
+                <div>
                     <div class="col-sm-12 col-lg-12 order-lg-2 d-none d-md-block top-story">
                         <div class="news__title align-content-center m-2 p-1">
                             <h4>TOP STORY</h4>
@@ -412,8 +399,8 @@
                                         <a href="#" class="font-weight-bold text">PANDEMIC HEROES</a>
                                     </div>
                                     <div class="image">
-                                        <img class="card-img-top image-responsive" src="images/isaac.jpg"
-                                            alt="new york riots" alt="new york riots">
+                                        <img class="card-img-top image-responsive" src="images/isaac.jpg" alt="new
+                                            york riots">
                                     </div>
                                 </div>
                                 <div class="card-body">
@@ -432,7 +419,7 @@
                                     </div>
                                     <div class="image">
                                         <img class="card-img-top image-responsive" src="images/evan-rosenberg.jpg"
-                                            alt="new york riots" alt="new york riots">
+                                            alt="new york riots">
                                     </div>
                                 </div>
                                 <div class="card-body">
@@ -451,7 +438,7 @@
                                     </div>
                                     <div class="image">
                                         <img class="card-img-top image-responsive" src="images/tamara-mcgovern.jpg"
-                                            alt="new york riots" alt="new york riots">
+                                            alt="new york riots">
                                     </div>
                                 </div>
                                 <div class="card-body">
@@ -476,8 +463,7 @@
                                     </div>
                                     <div class="image">
                                         <img class="card-img-top image-responsive"
-                                            src="images/washington-dc-protest.jpg" alt="new york riots"
-                                            alt="new york riots">
+                                            src="images/washington-dc-protest.jpg" alt="new york riots">
                                     </div>
                                 </div>
                                 <div class="card-body">
@@ -496,7 +482,7 @@
                                     </div>
                                     <div class="image">
                                         <img class="card-img-top image-responsive" src="images/geroge-floyd-mural.jpg"
-                                            alt="new york riots" alt="new york riots">
+                                            alt="new york riots">
                                     </div>
                                 </div>
                                 <div class="card-body">
@@ -515,27 +501,38 @@
                                     </div>
                                     <div class="image">
                                         <img class="card-img-top image-responsive"
-                                            src="images/daughters-dust-criterion.jpg" alt="new york riots"
-                                            alt="new york riots">
+                                            src="images/daughters-dust-criterion.jpg" alt="new york riots">
                                     </div>
                                 </div>
                                 <div class="card-body">
                                     <p class="card-title font-weight-bold text-muted">Movies by Black Filmmakers
                                         Now Streaming
-                                        Free on Criterion Channel</p>
-
+                                        Free on Criterion Channel
+                                    </p>
                                 </div>
                             </div>
                         </div>
+                        <div class="signup-box mt-4 d-lg-none d-md-none col-sm-12">
+                            <div class="logo-title align-items-center d-flex justify-content-center">
+                                <img class="d-flex align-self-start mr-3 icon-n "
+                                    src="https://g.newsweek.com/www/images/logo-n1.svg" alt="Generic placeholder image">
+                                <div>start your day with our top 5 articles</div>
+                            </div>
+                            <form class="mt-3">
+                                <input type="text" placeholder="Email address" />
+                                <button type="submit" class="w-arrow reversed mt-3 text-uppercase">Free Sign Up</button>
+                            </form>
+                        </div>
+
                     </div>
-                    <div class="col-sm-12 top-story">
+                    <div class="col-sm-12">
                         <div class="stories-title mt-0">
                             <h3 class="text-muted"> MORE STORIES</h3>
                         </div>
                         <div class="media mt-4">
                             <img class="d-flex align-self-start mr-3" src="images/dr-fauci-white-house-april-2020.jpg"
                                 alt="Generic placeholder image">
-                            <div class="media-body">
+                            <div class="media-body debate-title">
                                 <h5 class="mt-0 align-self-center font-weight-bold">Dr. Fauci Says COVID-19
                                     Vaccine to Be
                                     Manufactured Before Knowing It Works</h5>
@@ -549,7 +546,7 @@
                         <div class="media mt-4">
                             <img class="d-flex align-self-start mr-3" src="images/kanye-west.jpg"
                                 alt="Generic placeholder image">
-                            <div class="media-body">
+                            <div class="media-body debate-title">
                                 <h5 class="mt-0 align-self-center font-weight-bold">Kanye West Joins Chicago
                                     Rally,
                                     Protester Angrily Accuses Him of Hijacking</h5>
@@ -564,7 +561,7 @@
                             <img class="d-flex align-self-start mr-3"
                                 src="images/donald-trump-iran-nuclear-deal-jcpoa-2020.jpg"
                                 alt="Generic placeholder image">
-                            <div class="media-body">
+                            <div class="media-body debate-title">
                                 <h5 class="mt-0 align-self-center font-weight-bold">Donald Trump Calls on
                                     Iran to 'Make the
                                     Big Deal' Before 2020 Election</h5>
@@ -579,7 +576,7 @@
                         <div class="media mt-4">
                             <img class="d-flex align-self-start mr-3" src="images/sen-tom-cotton-r-ar.jpg"
                                 alt="Generic placeholder image">
-                            <div class="media-body">
+                            <div class="media-body debate-title">
                                 <h5 class="mt-0 align-self-center font-weight-bold">Tom Cotton Says New York
                                     Times 'tucked
                                     Tail' over His Op-Ed</h5>
@@ -592,7 +589,7 @@
                         <div class="media mt-4">
                             <img class="d-flex align-self-start mr-3" src="images/national-guard.jpg"
                                 alt="Generic placeholder image">
-                            <div class="media-body">
+                            <div class="media-body debate-title">
                                 <h5 class="mt-0 align-self-center font-weight-bold">Historic Number of
                                     National Guard Troops
                                     Active Across U.S.</h5>
@@ -607,7 +604,7 @@
                         <div class="media mt-4">
                             <img class="d-flex align-self-start mr-3" src="images/george-floyd-protests.jpg"
                                 alt="Generic placeholder image">
-                            <div class="media-body">
+                            <div class="media-body debate-title">
                                 <h5 class="mt-0 align-self-center font-weight-bold">State and City Lawmakers
                                     Propose
                                     Legislation to Ban Use of Tear Gas</h5>
@@ -622,20 +619,21 @@
                         <div class="media mt-4">
                             <img class="d-flex align-self-start mr-3" src="images/cdc-director-robert-redfield.jpg"
                                 alt="Generic placeholder image">
-                            <div class="media-body">
-                                <h52 class="mt-0 align-self-center font-weight-bold">CDC Director 'Concerned'
+                            <div class="media-body debate-title">
+                                <h5 class="mt-0 align-self-center font-weight-bold">CDC Director 'Concerned'
                                     COVID-19
                                     Warnings Aren't Sticking in U.S.</h5>
-                                    <p>"We ask the American public to be vigilant," CDC Director Robert Redfield
-                                        said during a
-                                        hearing with congressional leaders Thursday.</p>
+                                <p>"We ask the American public to be vigilant," CDC Director Robert Redfield
+                                    said during a
+                                    hearing with congressional leaders Thursday.
+                                </p>
                             </div>
                         </div>
                         <div class="border-bottom"></div>
                         <div class="media mt-4">
                             <img class="d-flex align-self-start mr-3"
                                 src="images/george-floyd-sign-nyc-protest-june-4.jpg" alt="Generic placeholder image">
-                            <div class="media-body">
+                            <div class="media-body debate-title">
                                 <h5 class="mt-0 align-self-center font-weight-bold">First-Degree Murder
                                     Charge Would Likely
                                     Acquit Derek Chauvin, Experts Say</h5>
@@ -650,7 +648,7 @@
                         <div class="media mt-4">
                             <img class="d-flex align-self-start mr-3" src="images/jefferson-davis.jpg"
                                 alt="Generic placeholder image">
-                            <div class="media-body">
+                            <div class="media-body debate-title">
                                 <h5 class="mt-0 align-self-center font-weight-bold">Alabama Lawmakers Call
                                     for End to
                                     Commemorating Jefferson Davis' Birthday</h5>
@@ -665,7 +663,7 @@
                         <div class="media mt-4">
                             <img class="d-flex align-self-start mr-3" src="images/us-firearm-sales.jpg"
                                 alt="Generic placeholder image">
-                            <div class="media-body">
+                            <div class="media-body debate-title">
                                 <h5 class="mt-0 align-self-center font-weight-bold">U.S. Gun Sales Spike
                                     Amid Pandemic and
                                     Protests</h5>
@@ -678,7 +676,7 @@
                         <div class="media mt-4">
                             <img class="d-flex align-self-start mr-3" src="images/riots-1967.jpg"
                                 alt="Generic placeholder image">
-                            <div class="media-body">
+                            <div class="media-body debate-title">
                                 <h5 class="mt-0 align-self-center font-weight-bold">Racism, Police Killings
                                     and Riots. This
                                     was America in 1967—and in 2020.</h5>
@@ -689,29 +687,27 @@
                                     2410—maybe.</p>
                             </div>
                         </div>
-                        <div class="border-bottom"></div>
                     </div>
                 </div>
             </section>
         </div>
         <section class="magazine-section col-sm-12 col-md-12">
             <div class="top-story">
-                <div class="media  magazine-logo">
-                    <img class="d-flex align-self-start mr-3 icon-n "
-                        src="https://g.newsweek.com/www/images/logo-n1.svg" alt="Generic placeholder image">
+                <div class="media magazine-logo">
+                    <img class="d-flex align-self-start mr-3 icon-n" src="https://g.newsweek.com/www/images/logo-n1.svg"
+                        alt="Generic placeholder image">
                     <div class="media-body">
                         <h1 class="mt-0 font-weight-bold text-uppercase magazine-title d-flex align-items-center">
-                            in the magazine</h1>
+                            IN THE MAGAZINE</h1>
                     </div>
                 </div>
                 <div class="row">
                     <div class="featured-story col-md-3 col-lg-3">
-                        <div class="category d-sm-block text-uppercase">
+                        <div class="category d-none text-uppercase">
                             <a href="#" class="font-weight-bold">June 12 issue</a>
                         </div>
-                        <div class="image">
-                            <img class="card-img-top image-responsive" src="images/cover-june-12-2020.jpg"
-                                alt="new york riots">
+                        <div class="image image-responsive">
+                            <img class="card-img-top" src="images/may-29-june-06-2020-cover.jpg" alt="new york riots">
                         </div>
                         <div class="media mt-4 magazine-logo">
                             <div class="media-body logo-feature">
@@ -722,9 +718,8 @@
                         </div>
                     </div>
                     <div class="featured-story col-md-3 col-lg-3">
-                        <div class="image">
-                            <img class="card-img-top image-responsive" src="images/cover-june-12-2020.jpg"
-                                alt="new york riots">
+                        <div class="image image-responsive">
+                            <img class="card-img-top" src="images/cover-june-12-2020.jpg" alt="new york riots">
                         </div>
                         <div class="featured-links text-uppercase mt-4">
                             <a href="#" class="font-weight-bold p-2">COVER</a>
@@ -736,9 +731,9 @@
                         </div>
                     </div>
                     <div class="featured-story col-md-3 col-lg-3">
-                        <div class="image">
-                            <img class="card-img-top image-responsive"
-                                src="images/fea-mentalhealth-02-1210859071-web-banner.jpg" alt="new york riots">
+                        <div class="image image-responsive">
+                            <img class="card-img-top" src="images/fea-mentalhealth-02-1210859071-web-banner.jpg"
+                                alt="new york riots">
                         </div>
                         <div class="featured-links text-uppercase mt-4">
                             <a href="#" class="font-weight-bold p-2">Features</a>
@@ -751,9 +746,8 @@
                         </div>
                     </div>
                     <div class="featured-story col-md-3 col-lg-3">
-                        <div class="image">
-                            <img class="card-img-top image-responsive" src="images/coronavirus-testing.jpg"
-                                alt="new york riots">
+                        <div class="image image-responsive">
+                            <img class="card-img-top" src="images/coronavirus-testing.jpg" alt="new york riots">
                         </div>
                         <div class="featured-links text-uppercase mt-4">
                             <a href="#" class="font-weight-bold p-2">Periscope</a>
@@ -761,14 +755,12 @@
                         </div>
                         <div class="card-body">
                             <h5 class="card-title font-weight-bold">Contact Tracing Won't Solve the
-                                Coronavirus Crisis:Epidemiologist</h5>
+                                Coronavirus Crisis</h5>
                         </div>
                     </div>
-
                     <div class="featured-story col-md-3 col-lg-3">
                         <div class="image">
-                            <img class="card-img-top image-responsive" src="images/cul-cooper-banner.jpg"
-                                alt="new york riots">
+                            <img class="card-img-top" src="images/cul-cooper-banner.jpg" alt="new york riots">
                         </div>
                         <div class="featured-links text-uppercase mt-4">
                             <a href="#" class="font-weight-bold p-2">Features</a>
@@ -781,8 +773,7 @@
                     </div>
                     <div class="featured-story col-md-3 col-lg-3">
                         <div class="image">
-                            <img class="card-img-top image-responsive" src="images/cul-missmanners-banner.jpg"
-                                alt="new york riots">
+                            <img class="card-img-top" src="images/cul-missmanners-banner.jpg" alt="new york riots">
                         </div>
                         <div class="featured-links text-uppercase mt-4">
                             <a href="#" class="font-weight-bold p-2">Downtime</a>
@@ -797,8 +788,7 @@
 
                     <div class="featured-story col-md-3 col-lg-3">
                         <div class="image">
-                            <img class="card-img-top image-responsive" src="images/cul-ps-kudrow.jpg"
-                                alt="new york riots">
+                            <img class="card-img-top" src="images/cul-ps-kudrow.jpg" alt="new york riots">
                         </div>
                         <div class="featured-links text-uppercase mt-4">
                             <a href="#" class="font-weight-bold p-2">Downtime</a>
@@ -813,19 +803,18 @@
                     </div>
                     <div class="featured-story col-md-3 col-lg-3">
                         <div class="image">
-                            <img class="card-img-top image-responsive" src="images/ground-zero.jpg"
-                                alt="new york riots">
+                            <img class="card-img-top" src="images/ground-zero.jpg" alt="new york riots">
                         </div>
-                        <div class="category d-sm-block text-uppercase">
-                            <a href="#" class="font-weight-bold">IN FOCUS</a>
+                        <div class="featured-links text-uppercase mt-4">
+                            <a href="#" class="font-weight-bold text-white p-2">IN FOCUS</a>
                         </div>
-                        <div class="card-body">
+                        <div class="card-body m-0">
                             <h3 class="card-title font-weight-bold">GROUND ZERO
                             </h3>
                         </div>
                     </div>
                 </div>
-
+            </div>
         </section>
         <section class="editors-pick col-sm-12 col-md-12">
             <div class="top-story">
@@ -846,8 +835,7 @@
                                 </div>
                                 <div class="image">
                                     <img class="card-img-top image-responsive"
-                                        src="images/meghan-markle-field-remembrance.jpg" alt="new york riots"
-                                        alt="new york riots">
+                                        src="images/meghan-markle-field-remembrance.jpg" alt="new york riots">
                                 </div>
                             </div>
                             <div class="card-body">
@@ -1199,10 +1187,11 @@
                         </div>
                     </div>
                 </div>
+            </div>
         </section>
         <section class="world-section d-md-none d-lg-block">
             <div class="heroes__title align-content-center m-2 p-1 text-uppercase">
-                <h1 class="block-title red">tech & science</h4>
+                <h1 class="block-title red">tech & science</h1>
             </div>
             <div class="row top-story">
                 <div class="featured-story col-md-4 col-lg-4 col-lg-4">
@@ -1315,7 +1304,6 @@
                     </div>
                 </div>
             </div>
-            </div>
         </section>
         <section class="world-section d-md-none d-lg-block">
             <div class="heroes__title align-content-center m-2 p-1 text-uppercase">
@@ -1375,54 +1363,61 @@
                         </div>
                     </div>
                 </div>
+            </div>
         </section>
-        <div class="row d-md-flex">
-            <section class="container-fluid subscribe-section col-sm-12 col-md-12 col-lg-6 d-md-block">
-                <div class="subscribe__title">
-                    <h3 class="block-title red text-uppercase mt-5">subscribe</h3>
-                </div>
-                <div class="row subscribe-container">
-                    <div class="col-md-5 subscribe-img">
-                        <img src="images/may-29-june-06-2020-cover.jpg" alt="may-cover" class="mag-thumb-previous">
-                        <img src="images/cover-june-12-2020.jpg" alt="june-cover" class="mag-thumb-current">
-                    </div>
-
-                    <div class="subscribe-title col-md-7 col-lg-8 >
-                        <h3 class=" subscribe-text">In-depth Stories You Don't See Elsewhere About Topics You Want to
-                        Read!</h3>
-                        <p>All Access + Weekly Delivery</p>
-                        <button class="extra-button rounded-lg text-uppercase">
-                            SUBSCRIBE >
-                        </button>
-                    </div>
-                </div>
-            </section>
-            <section class="newsletter col-sm-12 col-md-12 col-lg-4">
-                <div class="subscribe__title">
-                    <h3 class="block-title red text-uppercase mt-5">Newsletter</h3>
-                </div>
-                <div class="newsletter mt-5">
-                    <div class="newsletter-container d-flex">
-                        <div class="sign-up-img">
-                        </div>
-                        <div class="subscribe-info">
-                            <div class="subsribe-text d-flex flex-column align-items-center">
-                                <h3 class="subscribe-text text-capitalize">the starting 5</h3>
-                                <p class="extra-info">See why nearly a quarter of a million subscribers begin their day
-                                    with
-                                    the
-                                    Starting 5.</p>
+        <div class="main-content pre-footer">
+            <div class="subscribe row">
+                <div class="col-lg-7 magazine">
+                    <h4 class="box-title">
+                        Subscribe
+                    </h4>
+                    <div class="row gray-bg mobile-center">
+                        <div class="col-md-4 col-lg-7 col-xl-5">
+                            <div class="subcribe-box__img">
+                                <img src="images/may-29-june-06-2020-cover.jpg" alt="may-22-2020-cover"
+                                    class="subscribe-box__img1" />
+                                <img src="images/may-29-june-06-2020-cover.jpg" alt="may-22-2020-cover"
+                                    class="subscribe-box__img2" />
                             </div>
-                            <form class="free-signup d-flex flex-column">
-                                <input type="email" class="form-input" placeholder="Email Address">
-                                <button type="submit" class="extra-button text-uppercase rounded-lg mt-3"> free signup >
-                                </button>
+                        </div>
+
+                        <div class="col-md-8 col-lg-6 col-xl-7 subribe-box__content">
+                            <h3 class="article-title">
+                                In-depth Stories You Don't See Elsewhere About Topics You Want
+                                to Read!
+                            </h3>
+
+                            <p class="subscribe-box__text">
+                                All Access + Weekly Delivery. Choose A Membership That's Perfect
+                                for You!
+                            </p>
+
+                            <button class="reversed button w-arrow mt-3 text-uppercase rounded-lg">
+                                Subscribe <span class="angle-icon">&#8250;</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-5 d-flex flex-column">
+                    <div class="box-title">newsletter</div>
+                    <div class="newsletter d-flex flex-grow-1">
+                        <div class="pic-responsive d-none d-md-block flex-shrink-0">
+                            <img src="https://d.newsweek.com/en/full/1541302/starting5-homepage.png?w=397&h=265&q=90&f=742bce9a6f72dd8f19ba2e7fd5db06e5"
+                                alt="Newsletter side image" />
+                        </div>
+                        <div class="newsletter-content">
+                            <h3>The Starting 5</h3>
+                            <p>See why nearly a quarter of a million subscribers begin their day with the Starting 5</p>
+                            <form>
+                                <input type="text" placeholder="Email address" />
+                                <button type="submit" class="reversed button w-arrow mt-3">Free sign up</button>
                             </form>
                         </div>
                     </div>
                 </div>
-            </section>
+            </div>
         </div>
+
         <footer class="container-fluid">
             <div class="footer-img col-sm-12 col-md-12 col-lg-12 row align-items-end">
                 <div class="footer-logo col-md-8 row align-items-end">
@@ -1487,9 +1482,7 @@
                 </div>
             </div>
         </footer>
-        </div>
-
-    </main>
+   </main>
 </body>
 
 </html>
