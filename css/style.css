@@ -24,17 +24,13 @@ body {
 }
 
 main {
-  margin-top: 50px;
+  margin-top: 0;
   border-top: 1px solid rgba(3, 3, 3, 0.12);
 }
 
 .top-logo {
   fill: #fff;
   height: 20px;
-}
-
-.login-text {
-  display: none;
 }
 
 .main-content {
@@ -101,7 +97,6 @@ nav a {
 .category a,
 .debate-title h3,
 .debate-title h5,
-.debate-title p,
 .heroes__title h4,
 .news__title h4,
 .stories-title h3,
@@ -149,18 +144,6 @@ h3:hover {
   height: 20px;
 }
 
-nav {
-  width: 100%;
-  font-weight: 700;
-  position: absolute;
-  padding-top: 20px;
-  padding-right: 80px;
-  margin-top: 50px;
-  top: 0;
-  left: 0;
-  right: 0;
-}
-
 .search-bar {
   width: 80px;
   border: none;
@@ -180,24 +163,6 @@ form input {
   border-radius: 4px;
 }
 
-.search-bar input {
-  background: url(../images/magnifier.svg) 55px 0 no-repeat;
-  width: 100%;
-}
-
-nav ul {
-  grid-template-columns: repeat(12, 1fr);
-  justify-content: space-evenly;
-  text-align: center;
-}
-
-nav li {
-  border-right: 1px solid rgba(3, 3, 3, 0.12);
-  display: inline-block;
-  white-space: nowrap;
-  padding: 0 5px;
-}
-
 nav a:hover {
   color: #000;
   text-decoration: none;
@@ -212,19 +177,6 @@ nav a:hover {
 .footer a:hover {
   color: var(--white);
   text-decoration: none;
-}
-
-nav::before {
-  position: absolute;
-  top: 0;
-  right: 0;
-  content: "";
-  display: block;
-  width: 66px;
-  background-color: #f72210;
-  border-left: 12px solid #fff;
-  border-top: 13px solid #f72210;
-  box-sizing: content-box;
 }
 
 .navbar-buttons {
@@ -271,9 +223,9 @@ nav::before {
   cursor: pointer;
   text-transform: uppercase;
   display: inline-block;
-  padding: 6px 6px 5px 6px;
+  padding: 10px 10px 10px 10px;
   margin-left: 10px;
-  border-radius: 3px;
+  border-radius: 13px;
   border: none;
 }
 
@@ -569,10 +521,11 @@ footer {
   color: #666;
 }
 
-li.leaf {
+ul li.leaf {
   list-style: none;
   margin: 0;
-  padding: 4px;
+  padding: 0;
+  border-right: 1px solid #d9d9d9;
 }
 
 .sign-up-img {
@@ -652,19 +605,67 @@ button.reversed.w-arrow::after {
   background-color: #fff;
 }
 
-@media screen and (max-width: 768px) {
-  .subscribe-ad h3 {
-    display: block;
-    position: relative;
-  }
+ul.page-nav {
+  font-size: 19px;
+  line-height: 24px;
+  font-weight: bold;
+  font-family: "Roboto Condensed", sans-serif;
+  border-right: 5px solid #f4f4f4;
+}
 
+@media screen and (max-width: 768px) {
   .weather,
-  .login-button {
+  .small-login,
+  nav .header-bottom,
+  .page-nav ul li,
+  .first,
+  .leaf {
     display: none;
   }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (max-width: 991px) {
+  ul.page-nav a {
+    padding: 5px 15px;
+    position: relative;
+  }
+
+  .header-bottom {
+    transform: translate(100%, 0%);
+    opacity: 0;
+    visibility: hidden;
+    position: absolute;
+    top: 50px;
+    right: 0;
+    width: 220px;
+    height: 100vh;
+    padding: 10px 0;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  ul.page-nav {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-justify-content: center;
+    justify-content: center;
+    width: 100%;
+  }
+
+  ul.page-nav li {
+    flex-grow: 1;
+    text-align: center;
+    border-left-style: solid;
+  }
+
+  .page-header ul.page-nav li {
+    border-left-color: #d9d9d9;
+  }
+
+  ul.page-nav li:first-child {
+    border-left-width: 0;
+  }
+
   .left-align,
   .subscribe-images {
     text-align: left;
@@ -704,46 +705,72 @@ button.reversed.w-arrow::after {
   .subscribe-title {
     padding-left: 30px;
   }
-}
 
-@media only screen and (min-width: 1024px) {
-  body {
-    padding-right: 35px;
-    padding-left: 35px;
-    margin-left: 35px;
-    margin-right: 35px;
+  .header-bottom {
+    position: relative;
+    display: block;
+    padding-top: 35px;
+    padding-bottom: 15px;
+    border-bottom-width: 2px;
+    z-index: 1;
   }
 
-  nav::before {
-    right: 35px;
-    width: 6px;
+  .page-header .header-bottom {
+    padding-right: 160px;
+    background-color: white;
   }
 
-  .navbar-logo svg {
-    fill: #fff;
-    width: 316px;
-    height: 60px;
+  .page-header .header-bottom::before {
+    width: 66px;
   }
 
-  nav {
-    margin-top: 90px;
-  }
+  @media only screen and (min-width: 1024px) {
+    body {
+      padding-right: 35px;
+      padding-left: 35px;
+      margin-left: 35px;
+      margin-right: 35px;
+    }
 
-  .bottom-nav li:first-child {
-    margin-left: 0;
-  }
+    .navbar-logo svg {
+      fill: #fff;
+      width: 316px;
+      height: 60px;
+    }
 
-  .bottom-nav li a {
-    margin: 8px;
-    padding: 3px;
-  }
+    .second-navbar {
+      background-color: var(--white);
+      align-items: flex-start;
+      width: 100%;
+    }
 
-  .sign-up-container {
-    margin-top: 35px;
-  }
+    .second-nav li a {
+      border-right: 1px solid lightgray;
+      padding-right: 12px;
+      padding-left: 12px;
+      color: black;
+      font-weight: 700;
+      font-size: 0.84em;
+    }
 
-  .subscribe-title {
-    max-width: 250px;
-    margin-left: 10px;
+    .second-nav ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: inline-flex;
+    }
+
+    .second-nav li {
+      font-size: 1rem;
+    }
+
+    .sign-up-container {
+      margin-top: 35px;
+    }
+
+    .subscribe-title {
+      max-width: 250px;
+      margin-left: 10px;
+    }
   }
 }

@@ -3,11 +3,8 @@ A bootstrap clone of the newsweek website
 
 # Screenshot
 
-![screenshot](./large_view.PNG)
-![screenshot](./large_2.PNG)
-![screenshot](./large_3.PNG)
-![screenshot](./large_4.PNG)
-![screenshot](./large_5.PNG)
+![screenshot](./screenshot.PNG)
+
 
 This project consists of building a webpage using images as a background and adding gradients to elements.
 
