@@ -614,6 +614,7 @@ ul.page-nav {
 }
 
 @media screen and (max-width: 768px) {
+
   .weather,
   .small-login,
   nav .header-bottom,
@@ -625,14 +626,16 @@ ul.page-nav {
 }
 
 @media screen and (max-width: 991px) {
-   .weather,
-   .small-login,
-   nav .header-bottom,
-   .page-nav ul li,
-   .first,
-   .leaf {
-     display: none;
-   }
+
+  .weather,
+  .small-login,
+  nav .header-bottom,
+  .page-nav ul li,
+  .first,
+  .leaf {
+    display: none;
+  }
+
   ul.page-nav a {
     padding: 5px 15px;
     position: relative;

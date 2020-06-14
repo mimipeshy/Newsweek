@@ -16,7 +16,7 @@
 
 <body>
     <header class="container-fluid">
-        <div class="top-navbar row align-items-center">
+        <div class="top-navbar sticky row align-items-center">
             <div class="weather d-lg-block">
                 <a href="#">
                     <img src="images/29.png" alt="">
@@ -63,7 +63,7 @@
                 </button>
             </div>
         </div>
-        <nav class="header-bottom mt-0 pt-3 pb-0 mb-0">
+        <nav class="header-bottom mt-0 pt-3 d-md-none d-lg-block pb-0 mb-0">
             <div class="below-header justify-content-center">
                 <ul class="page-nav">
                     <li class="first leaf"><a href="#">US</a></li>
@@ -1018,7 +1018,7 @@
                 </div>
             </div>
         </section>
-        <section class="more-news d-md-none d-lg-block">
+        <section class="more-news d-lg-block">
             <div class="heroes__title align-content-center m-2 p-1 mt-4 text-uppercase">
                 <h1 class="block-title red">us</h1>
             </div>
@@ -1044,37 +1044,37 @@
                     </div>
                 </div>
                 <div class="col-md-4 col-lg-4 col-lg-4 ">
-                    <div class="media mt-0 border-none ">
-                        <img class="d-flex align-self-start mr-3" src="images/dr-fauci-white-house-april-2020.jpg"
-                            alt="Generic placeholder image">
-                        <div class="media card-body">
-                            <h2 class="card-title mt-0 align-self-center font-weight-bold">Arizona Reports Record
-                                Single-Day Rise in
-                                Coronavirus Cases and ER Visits</h2>
-                        </div>
-                    </div>
-                    <div class="media mt-2">
-                        <img class="d-flex align-self-start mr-3" src="images/coronavirus-reopening.jpg"
+                    <div class="media mt-4 pb-4 border-none border-bottom">
+                        <img class="img-resize d-flex align-self-start mr-3"
+                            src="images/dr-fauci-white-house-april-2020.jpg"
                             alt="Generic placeholder image">
                         <div class="media-body">
+                            <h2 class="mt-0 align-self-center font-weight-bold">Arizona Reports Record Single-Day Rise
+                                in Coronavirus Cases and ER Visits</h2>
+                        </div>
+                    </div>
+                    <div class="media mt-4 pb-4 border-none border-bottom">
+                        <img class="d-flex align-self-start mr-3" src="images/coronavirus-reopening.jpg"
+                            alt="Generic placeholder image">
+                        <div class="media-body ">
                             <h2 class="mt-0 align-self-center font-weight-bold">13 States Report Spikes in
                                 Coronavirus Cases
                                 After Reopening Economy</h2>
                         </div>
                     </div>
-                    <div class="media mt-5 mb-5">
+                    <div class="media mt-4 mb-5 pb-4 border-none border-bottom">
                         <img class="d-flex align-self-start mr-3" src="images/george-floyd-memorial.jpg"
                             alt="Generic placeholder image">
                         <div class="media-body">
                             <h2 class="mt-0 align-self-center font-weight-bold">Minneapolis Bans All Chokeholds
-                                By Police
-                            </h2>
+                                By Police</h2>
                         </div>
-                    </div>
+                    </div>                
+                   
                 </div>
             </div>
         </section>
-        <section class="world-section d-md-none d-lg-block">
+        <section class="world-section d-lg-block">
             <div class="heroes__title align-content-center m-2 p-1 mt-4 text-uppercase">
                 <h1 class="block-title red">world</h1>
             </div>
@@ -1103,7 +1103,7 @@
                     </div>
                 </div>
                 <div class="col-md-4 col-lg-4 col-lg-4 justify-content-space-between d-block">
-                    <div class="media mt-0">
+                    <div class="media mt-0 pb-4 border-none border-bottom">
                         <img class="img-resize d-flex align-self-start mr-3" src="images/hong-kong-protests.jpg"
                             alt="Generic placeholder image">
                         <div class="media-body">
@@ -1112,7 +1112,7 @@
                                 Tiananmen Vigil Ban</h2>
                         </div>
                     </div>
-                    <div class="media mt-4">
+                    <div class="media mt-4 pb-4 border-none border-bottom">
                         <img class="d-flex align-self-start mr-3" src="images/boris-johnson-approval-ratings.jpg"
                             alt="Generic placeholder image">
                         <div class="media-body">
@@ -1121,7 +1121,7 @@
                                 in Protests to U.S. Officials</h2>
                         </div>
                     </div>
-                    <div class="media mt-4 mb-5">
+                    <div class="media mt-4 mb-5 pb-4 border-none border-bottom">
                         <img class="d-flex align-self-start mr-3" src="images/mexico-protest.jpg"
                             alt="Generic placeholder image">
                         <div class="media-body">
@@ -1193,7 +1193,7 @@
                 </div>
             </div>
         </section>
-        <section class="world-section d-md-none d-lg-block">
+        <section class="world-section d-lg-block">
             <div class="heroes__title align-content-center m-2 p-1 text-uppercase">
                 <h1 class="block-title red">tech & science</h1>
             </div>
@@ -1250,7 +1250,7 @@
                 </div>
             </div>
         </section>
-        <section class="world-section d-md-none d-lg-block">
+        <section class="world-section d-lg-block">
             <div class="heroes__title align-content-center m-2 p-1 text-uppercase">
                 <h1 class="block-title red">culture</h1>
             </div>
@@ -1309,7 +1309,7 @@
                 </div>
             </div>
         </section>
-        <section class="world-section d-md-none d-lg-block">
+        <section class="world-section d-lg-block">
             <div class="heroes__title align-content-center m-2 p-1 text-uppercase">
                 <h1 class="block-title red">sports</h1>
             </div>
@@ -1418,6 +1418,16 @@
                             </form>
                         </div>
                     </div>
+                </div>
+            </div>
+        </div>
+        <div class="subscribe-block">
+            <div class="flex-md-row">
+                <div class="col-md-7 col-lg-8 flex-md flex-direction-column">
+                    <div class="block-title red text-uppercase"><h3>Subscribe</h3></div>
+                </div>
+                <div class="col-1 f1 flexx-sm align-tems-center">
+                    
                 </div>
             </div>
         </div>
