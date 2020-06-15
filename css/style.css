@@ -635,6 +635,9 @@ ul.page-nav {
   .pic-responsive {
     display: none;
   }
+  body{
+    overflow-x: hidden;
+  }
 
   .newsletter {
     padding: 0;
@@ -642,18 +645,6 @@ ul.page-nav {
 }
 
 @media screen and (max-width: 991px) {
-  .header-bottom {
-    transform: translate(100%, 0%);
-    opacity: 0;
-    visibility: hidden;
-    position: absolute;
-    top: 50px;
-    right: 0;
-    width: 220px;
-    height: 100vh;
-    padding: 10px 0;
-  }
-
   .weather,
   .small-login,
   nav .header-bottom,
@@ -759,6 +750,7 @@ ul.page-nav {
       padding-left: 35px;
       margin-left: 35px;
       margin-right: 35px;
+    overflow-x: hidden;
     }
 
     .navbar-logo svg {
