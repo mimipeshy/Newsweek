@@ -2,7 +2,7 @@
 A bootstrap clone of the newsweek website
 
 # Screenshot
-
+![screenshot](./screen2.png)
 ![screenshot](./screenshot.PNG)
 
 
