@@ -727,8 +727,7 @@ ul.page-nav {
   }
 
   .header-bottom {
-    position: relative;
-    display: block;
+     display: block;
     padding-top: 35px;
     padding-bottom: 15px;
     border-bottom-width: 2px;
