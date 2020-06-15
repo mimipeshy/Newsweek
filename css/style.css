@@ -748,7 +748,9 @@ ul.page-nav {
       width: 316px;
       height: 60px;
     }
-
+    .nav-subscribe{
+      margin-right: 30px;
+    }
     .second-navbar {
       background-color: var(--white);
       align-items: flex-start;
