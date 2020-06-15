@@ -338,12 +338,12 @@ nav a:hover {
   border: 1px double var(--light-gray);
 }
 
-.subscribe-title h3 {
-  font-size: 2rem;
+/* .subscribe-title h4 {
+  font-size: 1.2rem;
   color: #000;
   font-weight: 700;
   margin-bottom: 20px;
-}
+} */
 
 .sticky {
   position: sticky;
@@ -426,20 +426,17 @@ nav a:hover {
 .box-title {
   color: var(--main-color);
   font-weight: 700;
-  font-size: 22px;
+  font-size: 20px;
   padding: 14px 0 4px;
   border-top: 1px solid var(--separator-color);
   text-transform: uppercase;
   border: none;
+  font-family: var(--primary-font);
 }
 
 .subscribe-ad {
   background: var(--washed-out-background);
   padding: 30px;
-}
-
-.newsletter {
-  border: 1px solid #ebebeb;
 }
 
 .pic-responsive {
@@ -464,7 +461,7 @@ nav a:hover {
   position: absolute;
   transform: translate(-50%, -50%);
   left: 50%;
-  top: 50%;
+  top: 20%;
   height: 100%;
   width: auto;
   max-width: none;
@@ -486,7 +483,7 @@ footer {
 }
 
 .copyright {
-  font-size: 18px;
+  font-size: 14px;
   line-height: 12px;
   text-transform: uppercase;
   color: #666;
@@ -510,7 +507,7 @@ footer {
 }
 
 .social {
-  font-size: 2.1rem;
+  font-size: 1.1rem;
 }
 
 .footer-editions {
@@ -613,6 +610,70 @@ ul.page-nav {
   border-right: 5px solid #f4f4f4;
 }
 
+.subscribe-section {
+  padding-bottom: 20px;
+  margin-bottom: 40px;
+}
+
+
+.subscribe-img {
+  background-color: #f4f5f6;
+  padding: 24px 20px 20px;
+
+}
+
+.subscribe-img-top,
+.subscribe-img-bottom {
+  width: 170px;
+  height: 228px;
+}
+
+.subscribe-img-top {
+  position: absolute;
+  top: 19px;
+  left: 84px;
+}
+
+.subscribe-image-container {
+  position: relative;
+  height: 160px;
+  margin: 0 auto 15px;
+  display: inline-block;
+  align-self: center;
+  padding-bottom: 13px;
+  max-width: 290px;
+}
+
+.pic-responsive {
+  display: block;
+  width: 100%;
+  padding-bottom: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+.newsletter {
+  max-width: 100%;
+  margin-bottom: 30px;
+  padding: 5px;
+  border:1px solid var(--washed-out-background);
+}
+
+
+.newsletter-content {
+  padding: 30px;
+}
+
+.pic-responsive img {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  left: 50%;
+  top: 47%;
+  height: 90%;
+  width: auto;
+  max-width: none;
+}
+
 @media screen and (max-width: 768px) {
 
   .weather,
@@ -620,10 +681,17 @@ ul.page-nav {
   nav .header-bottom,
   .page-nav ul li,
   .first,
-  .leaf {
+  .leaf,
+  .pic-responsive {
     display: none;
   }
+
+  .newsletter {
+    padding: 0;
+  }
+
 }
+
 
 @media screen and (max-width: 991px) {
 
@@ -652,6 +720,12 @@ ul.page-nav {
     height: 100vh;
     padding: 10px 0;
   }
+
+  .subscribe-title {
+    text-align: center;
+  }
+
+ 
 }
 
 @media screen and (min-width: 992px) {
@@ -711,10 +785,6 @@ ul.page-nav {
 
   .social-icons {
     margin-left: 45px;
-  }
-
-  .subscribe-title {
-    padding-left: 30px;
   }
 
   .header-bottom {
@@ -779,9 +849,9 @@ ul.page-nav {
       margin-top: 35px;
     }
 
-    .subscribe-title {
-      max-width: 250px;
-      margin-left: 10px;
+    .subscribe-image-container {
+      height: 250px;
     }
+
   }
 }
