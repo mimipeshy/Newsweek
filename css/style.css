@@ -22,7 +22,8 @@ body {
   font-size: 13px;
   line-height: 18px;
   overflow-x: hidden;
-  max-width: 1300px;
+
+  align-content: center;
 }
 
 header {
@@ -608,11 +609,13 @@ ul.page-nav {
 .newsletter-content {
   padding: 30px;
 }
+
 /* 
 @media screen and (min-width:768px){
   
 } */
 @media screen and (max-width: 768px) {
+
   .weather,
   .small-login,
   nav .header-bottom,
@@ -638,6 +641,7 @@ ul.page-nav {
     height: 100vh;
     padding: 10px 0;
   }
+
   .weather,
   .small-login,
   nav .header-bottom,
@@ -718,7 +722,7 @@ ul.page-nav {
   }
 
   .header-bottom {
-     display: block;
+    display: block;
     padding-top: 35px;
     padding-bottom: 15px;
     border-bottom-width: 2px;
@@ -732,7 +736,7 @@ ul.page-nav {
 
   .page-header .header-bottom::before {
     width: 66px;
-  }
+  }}
 
   @media only screen and (min-width: 1024px) {
     body {
@@ -740,7 +744,7 @@ ul.page-nav {
       padding-left: 35px;
       margin-left: 35px;
       margin-right: 35px;
-    overflow-x: hidden;
+      overflow-x: hidden;
     }
 
     .navbar-logo svg {
@@ -748,9 +752,11 @@ ul.page-nav {
       width: 316px;
       height: 60px;
     }
-    .nav-subscribe{
+
+    .nav-subscribe {
       margin-right: 3px;
     }
+
     .second-navbar {
       background-color: var(--white);
       align-items: flex-start;
@@ -785,4 +791,12 @@ ul.page-nav {
       height: 250px;
     }
   }
-}
+
+  @media only screen and (min-width: 4000px) {
+    body {
+ 
+        padding-right: 500px;
+        padding-left: 500px;
+    }
+  }
+  
