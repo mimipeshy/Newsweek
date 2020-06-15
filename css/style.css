@@ -21,10 +21,10 @@ body {
   color: #333;
   font-size: 13px;
   line-height: 18px;
-  overflow-x:hidden
+  overflow-x: hidden;
 }
 
-header{
+header {
   position: relative;
 }
 
@@ -458,10 +458,6 @@ nav a:hover {
   flex-basis: 161px;
 }
 
-.newsletter-content {
-  padding: 30px;
-}
-
 .pic-responsive img {
   position: absolute;
   transform: translate(-50%, -50%);
@@ -618,14 +614,6 @@ ul.page-nav {
   max-width: 290px;
 }
 
-.pic-responsive {
-  display: block;
-  width: 100%;
-  padding-bottom: 100%;
-  position: relative;
-  overflow: hidden;
-}
-
 .newsletter {
   max-width: 100%;
   margin-bottom: 30px;
@@ -635,16 +623,6 @@ ul.page-nav {
 
 .newsletter-content {
   padding: 30px;
-}
-
-.pic-responsive img {
-  position: absolute;
-  transform: translate(-50%, -50%);
-  left: 50%;
-  top: 47%;
-  height: 90%;
-  width: auto;
-  max-width: none;
 }
 
 @media screen and (max-width: 768px) {
@@ -664,6 +642,18 @@ ul.page-nav {
 }
 
 @media screen and (max-width: 991px) {
+  .header-bottom {
+    transform: translate(100%, 0%);
+    opacity: 0;
+    visibility: hidden;
+    position: absolute;
+    top: 50px;
+    right: 0;
+    width: 220px;
+    height: 100vh;
+    padding: 10px 0;
+  }
+
   .weather,
   .small-login,
   nav .header-bottom,
@@ -679,17 +669,7 @@ ul.page-nav {
     position: relative;
   }
 
-  .header-bottom {
-    transform: translate(100%, 0%);
-    opacity: 0;
-    visibility: hidden;
-    position: absolute;
-    top: 50px;
-    right: 0;
-    width: 220px;
-    height: 100vh;
-    padding: 10px 0;
-  }
+
 
   .subscribe-title {
     text-align: center;
