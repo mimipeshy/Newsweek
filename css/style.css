@@ -635,9 +635,6 @@ ul.page-nav {
   .pic-responsive {
     display: none;
   }
-  body{
-    overflow-x: hidden;
-  }
 
   .newsletter {
     padding: 0;
@@ -645,6 +642,15 @@ ul.page-nav {
 }
 
 @media screen and (max-width: 991px) {
+
+  .header-bottom {
+    position: absolute;
+    top: 50px;
+    right: 0;
+    width: 220px;
+    height: 100vh;
+    padding: 10px 0;
+  }
   .weather,
   .small-login,
   nav .header-bottom,
@@ -659,8 +665,6 @@ ul.page-nav {
     padding: 5px 15px;
     position: relative;
   }
-
-
 
   .subscribe-title {
     text-align: center;
