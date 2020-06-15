@@ -22,6 +22,7 @@ body {
   font-size: 13px;
   line-height: 18px;
   overflow-x: hidden;
+  max-width: 1300px;
 }
 
 header {
@@ -184,11 +185,6 @@ nav a:hover {
   text-decoration: none;
 }
 
-.navbar-buttons {
-  align-items: center;
-  margin-right: 10px;
-}
-
 .weather img {
   height: 45px;
   width: 45px;
@@ -341,18 +337,6 @@ nav a:hover {
 
 .border-bottom {
   border: 1px double var(--light-gray);
-}
-
-/* .subscribe-title h4 {
-  font-size: 1.2rem;
-  color: #000;
-  font-weight: 700;
-  margin-bottom: 20px;
-} */
-
-.sticky {
-  position: sticky;
-  top: 0;
 }
 
 .pre-footer h3 {
@@ -624,7 +608,10 @@ ul.page-nav {
 .newsletter-content {
   padding: 30px;
 }
-
+/* 
+@media screen and (min-width:768px){
+  
+} */
 @media screen and (max-width: 768px) {
   .weather,
   .small-login,
