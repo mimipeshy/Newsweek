@@ -525,35 +525,6 @@ ul li.leaf {
   border-right: 1px solid #d9d9d9;
 }
 
-.sign-up-img {
-  width: 48%;
-  max-width: 191px;
-  background: url(https://d.newsweek.com/en/full/1541302/starting5-homepage.png?w=397&h=265&q=90&f=742bce9a6f72dd8f19ba2e7fd5db06e5) center center/cover no-repeat;
-}
-
-.subcribe-box {
-  background-color: #eee;
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-  padding: 25px;
-}
-
-.subcribe-box__img {
-  position: relative;
-  height: 30px;
-}
-
-.subscribe-box__img2 {
-  position: absolute;
-  left: 70px;
-  top: 20px;
-}
-
-.subcribe-box__text {
-  font-weight: lighter;
-}
-
 a.button,
 button {
   background: 0 0;
@@ -674,9 +645,6 @@ ul.page-nav {
   max-width: none;
 }
 
-.special{
-  position: relative;
-}
 @media screen and (max-width: 768px) {
 
   .weather,
@@ -692,18 +660,7 @@ ul.page-nav {
   .newsletter {
     padding: 0;
   }
-  .special {
-    
-    transform: translate(-50%, 0%);
-    position: absolute;
-    top: 0;
-    left: 50%;
-    width: auto;
-    height: 100%;
-    max-width: inherit;
-
-}
-
+ 
 @media screen and (min-width:768px){
   .weather,
   .small-login,
@@ -711,10 +668,11 @@ ul.page-nav {
   .page-nav ul li,
   .first,
   .leaf,
-  .pic-responsive {
+  .pic-responsive,
+  .signup-box .special {
     display: none;
   }
-}
+
   
 }
 @media screen and (max-width: 991px) {
@@ -724,7 +682,8 @@ ul.page-nav {
   nav .header-bottom,
   .page-nav ul li,
   .first,
-  .leaf {
+  .leaf 
+  .signup-box .special{
     display: none;
   }
 
