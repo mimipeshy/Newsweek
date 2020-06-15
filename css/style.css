@@ -513,7 +513,7 @@ footer {
 .footer-editions {
   border-top: 3px solid #d9d9d9;
   padding-top: 6px;
-  font-size: 20px;
+  font-size: 18px;
   line-height: 15px;
   color: #666;
 }
@@ -674,6 +674,9 @@ ul.page-nav {
   max-width: none;
 }
 
+.special{
+  position: relative;
+}
 @media screen and (max-width: 768px) {
 
   .weather,
@@ -689,10 +692,31 @@ ul.page-nav {
   .newsletter {
     padding: 0;
   }
+  .special {
+    
+    transform: translate(-50%, 0%);
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: auto;
+    height: 100%;
+    max-width: inherit;
 
 }
 
-
+@media screen and (min-width:768px){
+  .weather,
+  .small-login,
+  nav .header-bottom,
+  .page-nav ul li,
+  .first,
+  .leaf,
+  .pic-responsive {
+    display: none;
+  }
+}
+  
+}
 @media screen and (max-width: 991px) {
 
   .weather,
