@@ -23,6 +23,10 @@ body {
   line-height: 18px;
 }
 
+header{
+  position: relative;
+}
+
 main {
   margin-top: 0;
   border-top: 1px solid rgba(3, 3, 3, 0.12);
@@ -586,11 +590,9 @@ ul.page-nav {
   margin-bottom: 40px;
 }
 
-
 .subscribe-img {
   background-color: #f4f5f6;
   padding: 24px 20px 20px;
-
 }
 
 .subscribe-img-top,
@@ -627,9 +629,8 @@ ul.page-nav {
   max-width: 100%;
   margin-bottom: 30px;
   padding: 5px;
-  border:1px solid var(--washed-out-background);
+  border: 1px solid var(--washed-out-background);
 }
-
 
 .newsletter-content {
   padding: 30px;
@@ -646,7 +647,6 @@ ul.page-nav {
 }
 
 @media screen and (max-width: 768px) {
-
   .weather,
   .small-login,
   nav .header-bottom,
@@ -661,15 +661,15 @@ ul.page-nav {
     padding: 0;
   }
 }
-@media screen and (max-width: 991px) {
 
+@media screen and (max-width: 991px) {
   .weather,
   .small-login,
   nav .header-bottom,
   .page-nav ul li,
   .first,
-  .leaf, 
-  .signup-box .special{
+  .leaf,
+  .signup-box .special {
     display: none;
   }
 
@@ -693,8 +693,6 @@ ul.page-nav {
   .subscribe-title {
     text-align: center;
   }
-
- 
 }
 
 @media screen and (min-width: 992px) {
@@ -821,6 +819,5 @@ ul.page-nav {
     .subscribe-image-container {
       height: 250px;
     }
-
   }
 }
