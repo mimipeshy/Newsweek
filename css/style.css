@@ -660,20 +660,6 @@ ul.page-nav {
   .newsletter {
     padding: 0;
   }
- 
-@media screen and (min-width:768px){
-  .weather,
-  .small-login,
-  nav .header-bottom,
-  .page-nav ul li,
-  .first,
-  .leaf,
-  .pic-responsive,
-  .signup-box .special {
-    display: none;
-  }
-
-  
 }
 @media screen and (max-width: 991px) {
 
@@ -682,7 +668,7 @@ ul.page-nav {
   nav .header-bottom,
   .page-nav ul li,
   .first,
-  .leaf 
+  .leaf, 
   .signup-box .special{
     display: none;
   }
