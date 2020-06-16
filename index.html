@@ -1,0 +1,1483 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Newsweek</title>
+    <link rel="stylesheet" type="text/css" href="css/reset.css" />
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/f58a22ad21.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header class="container-fluid fixed">
+        <div class="top-navbar row align-items-center">
+            <div class="weather d-lg-block">
+                <a href="#">
+                    <img src="images/29.png" alt="">
+                    <span>24° Nairobi, Kenya <br> </span>
+                    <span class="date">Thu, June 12, 2020</span>
+                </a>
+            </div>
+            <div class="navbar-logo">
+                <a href="#">
+                    <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 395.6 60"
+                        style="enable-background:new 0 0 395.6 60;" xml:space="preserve">
+                        <g>
+                            <path class="st0"
+                                d="M58.7,10.8h-5.6v48.3H42.8l-25.1-33v22.1h5.6v10.8H0V48.3h5.6V10.8H0V0h17.6L41,30.7V10.8h-5.6V0h23.2	L58.7,10.8L58.7,10.8z M95.8,38c0,0.9,0,1.8-0.1,2.7H70.3c-0.7,8.2,2.4,10.6,7.1,10.6c3.9,0,6.9-2.6,6.9-6.6h11	c-0.3,7.2-4,15.4-18.5,15.4c-14.5,0-21.3-10.5-21.3-22.1c0-10.5,7-21.6,21-21.6C89.9,16.3,95.8,25.6,95.8,38 M159,27.3h-3.7	l-9.4,31.8h-12.5l-5.9-17.4l-5.3,17.4h-12.8L98.8,27.4h-3.7V16.6h22.1v10.7h-5.6l5.8,16.9l7.6-27.6h6.8l9.3,27.6l5-16.9h-5.6V16.6	H159L159,27.3L159,27.3z M174.5,27.8c0,1.5,1.2,2.5,5.4,3.9l6,2c5.5,1.8,12.1,5.9,12.1,13.4c0,8.8-6.6,13-14.7,13	c-6.5,0-11.5-3.2-12.9-4.6V59h-10.8V44.4h10.6c0.3,4.8,4.6,7.3,8.5,7.3c3.2,0,4.7-1.4,4.7-3c0-2-1.2-3.1-6.5-4.8l-5.3-1.8	c-5.4-1.7-11.4-5.7-11.4-12.8c0-8.7,7.7-13.1,14.3-13.1c6.8,0,10.1,1.9,11.8,3.8l0.1-3.3H197v13.3h-11.2c-0.2-3.6-3.7-5.2-7.2-5.2	C175.8,24.8,174.5,26.1,174.5,27.8 M262.8,27.3h-3.7l-9.4,31.8h-12.5l-5.9-17.4L226,59.1h-12.8l-10.6-31.7h-3.7V16.6h22.1v10.7	h-5.6l5.8,16.9l7.6-27.6h6.8l9.3,27.7l5-16.9h-5.6V16.6h18.5V27.3z M302,37.9c0,0.9,0,1.8-0.1,2.7h-25.4	c-0.7,8.2,2.4,10.6,7.1,10.6c3.9,0,6.9-2.6,6.9-6.6h11c-0.3,7.2-4,15.4-18.5,15.4c-14.5,0-21.3-10.5-21.3-22.1	c0-10.5,7-21.6,21-21.6C296.1,16.2,302,25.5,302,37.9 M343.9,37.8c0,0.9,0,1.8-0.1,2.7h-25.4c-0.7,8.2,2.4,10.6,7.1,10.6	c3.9,0,6.9-2.6,6.9-6.6h11c-0.3,7.2-4,15.4-18.5,15.4c-14.5,0-21.3-10.5-21.3-22.1c0-10.5,7-21.6,21-21.6	C338,16.1,343.9,25.4,343.9,37.8 M389.9,59h-12.8l-13.3-17.3l-4.3,3.2v3.4h3.8V59h-19.6V48.3h3.7V10.6h-5.6V0h17.8v33.9l8.9-6.5	h-5.6V16.6h23.9v10.8h-3.7l-9.3,7l10.7,13.9h5.6L389.9,59L389.9,59z M395.6,56.6c0,0.5-0.1,0.9-0.4,1.2c-0.2,0.4-0.5,0.7-0.9,0.9	c-0.4,0.2-0.8,0.4-1.3,0.4c-0.5,0-0.9-0.1-1.2-0.4c-0.4-0.2-0.7-0.5-0.9-0.9c-0.2-0.4-0.4-0.8-0.4-1.2c0-0.5,0.1-0.9,0.4-1.2	c0.2-0.4,0.5-0.7,0.9-0.9c0.4-0.2,0.8-0.4,1.2-0.4c0.5,0,0.9,0.1,1.3,0.4c0.4,0.2,0.7,0.5,0.9,0.9	C395.5,55.8,395.6,56.2,395.6,56.6 M394.6,58c0.4-0.4,0.6-0.9,0.6-1.4c0-0.6-0.2-1-0.6-1.4s-0.9-0.6-1.4-0.6s-1,0.2-1.4,0.6	c-0.4,0.4-0.6,0.9-0.6,1.4c0,0.6,0.2,1,0.6,1.4c0.4,0.4,0.9,0.6,1.4,0.6S394.2,58.4,394.6,58 M393.6,56.8c0.1,0.1,0.2,0.1,0.2,0.1	c0.1,0.1,0.2,0.2,0.2,0.3c0,0,0.2,0.3,0.4,0.8h-0.8c-0.3-0.5-0.4-0.8-0.5-0.9c-0.1-0.1-0.2-0.2-0.3-0.2c0,0-0.1,0-0.1,0v1.1h-0.6	v-2.6h1.2c0.4,0,0.6,0.1,0.7,0.2c0.2,0.2,0.2,0.3,0.2,0.6c0,0.2-0.1,0.4-0.2,0.5C393.9,56.6,393.8,56.7,393.6,56.8 M393.5,56.3	c0.1-0.1,0.1-0.2,0.1-0.3s-0.1-0.2-0.1-0.3c-0.1-0.1-0.2-0.1-0.4-0.1h-0.3v0.7h0.3C393.3,56.4,393.4,56.4,393.5,56.3 M318.4,33.5	h13.9c0-6-3.9-8.4-6.8-8.4C322.1,25.2,318.6,27.9,318.4,33.5 M276.5,33.6h13.9c0-6-3.9-8.4-6.8-8.4C280.3,25.2,276.8,28,276.5,33.6 M70.3,33.7h13.9c0-6-3.9-8.4-6.8-8.4C74.1,25.3,70.6,28.1,70.3,33.7">
+                            </path>
+                        </g>
+                    </svg>
+                </a>
+            </div>
+            <div class="navbar-buttons">
+                <button class="login-button d-lg-inline-block">
+                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"
+                        id="Layer_2" x="0px" y="0px" width="16px" height="16px" viewBox="0 0 16 16"
+                        style="enable-background:new 0 0 16 16;" xml:space="preserve">
+                        <g>
+                            <path style="fill:#fdccc9;"
+                                d="M8,7c1.104,0,2-0.896,2-2S9.104,3,8,3S6,3.896,6,5S6.896,7,8,7z M9,8H7c-1.656,0-3,1.343-3,3v2h8v-2   C12,9.343,10.656,8,9,8z" />
+                        </g>
+                    </svg>
+                    <span class="button-text small-login">LOGIN</span>
+                </button>
+                <button class="nav-subscribe ">
+                    SUBSCRIBE >
+                </button>
+                <button class="menu-button d-lg-none">
+                    <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="bars"
+                        class="svg-inline--fa fa-bars fa-w-14" role="img" xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 448 512">
+                        <path fill="currentColor"
+                            d="M16 132h416c8.837 0 16-7.163 16-16V76c0-8.837-7.163-16-16-16H16C7.163 60 0 67.163 0 76v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16z">
+                        </path>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <nav class="header-bottom mt-0 pt-3 d-sm-none d-md-none d-lg-block pb-0 mb-0">
+            <div class="below-header justify-content-center">
+                <ul class="page-nav">
+                    <li class="first leaf"><a href="#">US</a></li>
+                    <li class="first leaf"><a href="#">World</a></li>
+                    <li class="first leaf"><a href="#">Business</a></li>
+                    <li class="first leaf"><a href="#">Tech & Science</a></li>
+                    <li class="first leaf"><a href="#">Culture</a></li>
+                    <li class="first leaf"><a href="#">NewsGeek</a></li>
+                    <li class="first leaf"><a href="#">Sports</a></li>
+                    <li class="first leaf"><a href="#">Health</a></li>
+                    <li class="first leaf"><a href="#">The Debate</a></li>
+                    <li class="first leaf"><a href="#">Vantage</a></li>
+                    <li class="first leaf"><a href="#">Weather</a></li>
+                    <li class="first leaf"><input type="text" placeholder="Search"></li>
+
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main class="container-fluid main-content align-items-center">
+        <div class="row main-content">
+            <div class="col-sm-12 col-md-7 order-md-2 col-lg-6 order-lg-2 d-md-none top-story">
+                <div class="news__title align-content-center m-2 p-1">
+                    <h4>TOP STORY</h4>
+                </div>
+                <div class="featured-story">
+                    <div class="category d-sm-block text-uppercase">
+                        <a href="#" class="font-weight-bold">US</a>
+                    </div>
+                    <div class="image">
+                        <img class="card-img-top image-responsive" src="images/new-york-riots-protests-george-floyd.jpg"
+                            alt="new york riots">
+                    </div>
+                </div>
+                <div class="card-body">
+                    <h2 class="card-title font-weight-bold">'I'm a Blue Lives Matter Activist, We've Defended Those
+                        Now Breaking Laws'</h2>
+                    <p class="card-text">The overwhelming majority, if not all, of the police agree that
+                        George Floyd's death was a disgraceful incident. But you don't riot. You don't steal and
+                        respond with
+                        violence.
+                    </p>
+                </div>
+            </div>
+            <div class="col-sm-12 col-md-6 order-md-1 col-lg-3 order-lg-1 featured-story">
+                <div class="news__title align-content-center m-2 p-1">
+                    <h4>FEATURED STORY</h4>
+                </div>
+                <div class="bg-dark-light">
+                    <div class="featured-story">
+                        <div class="category d-sm-block text-uppercase">
+                            <a href="#" class="font-weight-bold">US</a>
+                        </div>
+                        <div class="image">
+                            <img class="card-img-top image-responsive" src="images/george-floyd-protest-new-york.jpg"
+                                alt="new york riots">
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <h2 class="card-title font-weight-bold">After NYC Cop Stabbed in Neck, Two Shot, Union Blames
+                            Anti-Police
+                            Rhetoric</h2>
+                        <p class="card-text">
+                            Three New York City police officers were injured by a civilian Wednesday night while
+                            assigned to patrol a Brooklyn neighborhood for potential looting, according to NYPD.
+                        </p>
+                    </div>
+                </div>
+                <div class="featured-story">
+                    <div class="bg-dark-light">
+                        <div class="featured-story">
+                            <div class="category d-sm-block text-uppercase">
+                                <a href="#" class="font-weight-bold">US</a>
+                            </div>
+                            <div class="image">
+                                <img class="card-img-top image-responsive" src="images/jail.jpg" alt="new york riots">
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <h2 class="card-title font-weight-bold">Brooklyn Inmate Jamel Floyd Dies After Being
+                                Pepper-Sprayed by Prison Staff
+                                Rhetoric</h2>
+                            <p class="card-text">
+                                Prison staff were called after the 35-year-old had become "increasingly disruptive" in
+                                his
+                                cell.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="featured-story mt-4">
+                    <div class="bg-dark-light">
+                        <div class="featured-story">
+                            <div class="category d-sm-block text-uppercase">
+                                <a href="#" class="font-weight-bold">news</a>
+                            </div>
+                            <div class="image">
+                                <img class="card-img-top image-responsive"
+                                    src="images/meghan-markle-remembrance-sunday-cenotaph.jpg" alt="new york riots">
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <h2 class="card-title font-weight-bold">Exclusive: Meghan Markle's 'Raw' Black Lives
+                                Matter
+                                Video Drew Tears</h2>
+                            <p class="card-text">
+                                The Duchess of Sussex gave her most political speech yet without notes after Prince
+                                Harry
+                                joined her for private talks with community leaders beforehand, Newsweek can reveal.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="featured-story mt-4">
+                    <div class="bg-dark-light">
+                        <div class="featured-story">
+                            <div class="category d-sm-block text-uppercase">
+                                <a href="#" class="font-weight-bold">US</a>
+                            </div>
+                            <div class="image">
+                                <img class="card-img-top image-responsive" src="images/ahmaud-arbery.jpg"
+                                    alt="new york riots">
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <h2 class="card-title font-weight-bold">Travis McMichael Reportedly Used Racial Slur
+                                After
+                                Shooting Ahmaud Arbery</h2>
+                            <p class="card-text">
+                                Travis McMichael and Gregory McMichael, a son and father, are charged with the
+                                murder and
+                                aggravated assault of Arbery. Arbery died while out jogging in Brunswick,
+                                Georgia in
+                                February.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 featured-story mt-4">
+                    <div class="bg-dark-light">
+                        <div class="featured-story">
+                            <div class="category d-sm-block text-uppercase">
+                                <a href="#" class="font-weight-bold">US</a>
+                            </div>
+                            <div class="image">
+                                <img class="card-img-top image-responsive" src="images/george-floyd-protest.jpg"
+                                    alt="new york riots">
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <h2 class="card-title font-weight-bold">Georgia Official Says Police Should
+                                'Shoot to Kill'
+                                George
+                                Floyd
+                                Protesters</h2>
+                            <p class="card-text">
+                                The Macon-Bibb County commissioner has since apologized for the
+                                controversial remark.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <section
+                class="debate-section col-sm-12 col-md-12 order-md-4 col-lg-3 order-lg-3 justify-content-space-between">
+                <div class="row">
+                    <div class="debate container-fluid">
+                        <div class=" debate-title mt-4 red-border">
+                            <h5 class="text-muted"> THE DEBATE</h5>
+                        </div>
+                        <div class="media mt-4 mb-2 d-flex">
+                            <img class="align-self-start mr-3 img-resize" src="images/nigel-farage.png"
+                                alt="Generic placeholder image">
+                            <div class="font-weight-bold debate-title">
+                                <h5 class="mt-0 font-weight-bold">Respond to Coronavirus
+                                    With More
+                                    Nationalism
+                                </h5>
+                                <small class="font-weight-bold">BY NIGEL FARAGE</small>
+                            </div>
+                        </div>
+                        <div class="versus">
+                            <div class="versus-logo">
+                                VS
+                            </div>
+                        </div>
+                        <div class="media mt-4 mb-2 pb-2 d-flex blue-border">
+                            <div class="font-weight-bold debate-title">
+                                <h5 class="mt-0 font-weight-bold">Respond to Coronavirus
+                                    With More
+                                    Nationalism
+                                </h5>
+                                <small class="font-weight-bold">BY MARIANNE WILLIAMSON</small>
+                            </div>
+                            <img class="align-self-start mr-3 img-resize" src="images/marianne-williamson.png"
+                                alt="Generic placeholder image">
+                        </div>
+                    </div>
+                </div>
+                <article class="border-none">
+                    <div class=" debate-title mt-4 red-border">
+                        <h3 class="text-muted"> OPINIONS</h3>
+                    </div>
+                    <div class="media mt-4 mb-2 pb-2 d-flex separator">
+                        <img class="align-self-start mr-3" src="images/mark-mccoy.png" alt="Generic placeholder image">
+                        <div class="font-weight-bold debate-title">
+                            <h5 class="mt-0 font-weight-bold">I Was Arrested
+                                for Same as
+                                George Floyd. I
+                                Lived. That's White Privilege
+                            </h5>
+                            <small class="font-weight-bold">BY MARK MCCOY</small>
+                        </div>
+                    </div>
+                </article>
+
+                <div class="border-none">
+                    <div class="media mt-4 mb-2 pb-2 separator">
+                        <img class="d-flex align-self-start mr-3" src="images/john-yoo-robert-delahunty.png"
+                            alt="Generic placeholder image">
+                        <div class="media-body font-weight-bold debate-title">
+                            <h5 class="mt-0 align-self-center font-weight-bold">Domestic Military Use Is
+                                Lawful but Not
+                                Yet
+                                Prudent
+                            </h5>
+                            <small class="font-weight-bold">BY JOHN YOO</small>
+                        </div>
+                    </div>
+                </div>
+                <div class="border-none">
+                    <div class="media mt-4 mb-2 pb-2 separator">
+                        <img class="d-flex align-self-start mr-3" src="images/ann-olivarius.png"
+                            alt="Generic placeholder image">
+                        <div class="media-body font-weight-bold debate-title">
+                            <h5 class="mt-0 align-self-center font-weight-bold">Trump's Reasons for
+                                Targeting Social
+                                Media
+                                Are Wrong. But It's Right to Do
+                            </h5>
+                            <small class="font-weight-bold">BY ANN OLIVARIUS</small>
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+                    <div class="border-none">
+                        <div class="media mt-4 mb-2 pb-2 separator">
+                            <img class="d-flex align-self-start mr-3" src="images/anna-wang.png"
+                                alt="Generic placeholder image">
+                            <div class="media-body font-weight-bold debate-title">
+                                <h5 class="mt-0 align-self-center font-weight-bold">I Witnessed
+                                    Tiananmen
+                                    Square. COVID-19
+                                    Makes
+                                    Me Fear for China Even More
+                                </h5>
+                                <small class="font-weight-bold">BY ANNA WANG</small>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="border-none">
+                        <div class="media mt-4 mb-2 pb-2 separator">
+                            <img class="d-flex align-self-start mr-3" src="images/daniel-pipes.png"
+                                alt="Generic placeholder image">
+                            <div class="media-body font-weight-bold debate-title">
+                                <h5 class="mt-0 align-self-center font-weight-bold">A Reluctant but
+                                    Unhesitating Vote for
+                                    Donald
+                                    Trump
+                                </h5>
+                                <small class="font-weight-bold">BY DANIEL PIPES</small>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="border-none">
+                        <div class="media mt-4 mb-2 pb-2 separator">
+                            <img class="d-flex align-self-start mr-3" src="images/barbara-bollier.png"
+                                alt="Generic placeholder image">
+                            <div class="media-body font-weight-bold debate-title">
+                                <h5 class="mt-0 align-self-center font-weight-bold">I'm a
+                                    Kansas Lawmaker and Doctor. Wearing a Mask Isn't About Politics
+                                </h5>
+                                <small class="font-weight-bold">BY BARBARA BOLLIER</small>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="signup-box mt-4 d-sm-none d-md-none d-lg-block col-lg-11">
+                        <div class="logo-title align-items-center d-flex justify-content-center">
+                            <img class="d-flex align-self-start mr-3 icon-n "
+                                src="https://g.newsweek.com/www/images/logo-n1.svg" alt="Generic placeholder image">
+                            <div>start your day with our top 5 articles</div>
+                        </div>
+                        <form class="mt-3">
+                            <input type="text" placeholder="Email address" />
+                            <button type="submit" class="w-arrow reversed mt-3 text-uppercase">Free Sign Up</button>
+                        </form>
+                    </div>
+                </div>
+            </section>
+            <section class="heroes-section col-12 col-md-6 d-flex order-md-2 order-lg-2">
+                <div>
+                    <div class="col-sm-12 col-lg-12 order-lg-2 d-none d-md-block top-story">
+                        <div class="news__title align-content-center m-2 p-1">
+                            <h4>TOP STORY</h4>
+                        </div>
+                        <div class="featured-story">
+                            <div class="category d-sm-block text-uppercase">
+                                <a href="#" class="font-weight-bold">US</a>
+                            </div>
+                            <div class="image">
+                                <img class="card-img-top image-responsive"
+                                    src="images/new-york-riots-protests-george-floyd.jpg" alt="new york riots">
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <h2 class="card-title font-weight-bold">'I'm a Blue Lives Matter Activist, We've Defended
+                                Those
+                                Now Breaking Laws'</h2>
+                            <p class="card-text">The overwhelming majority, if not all, of the police agree that
+                                George Floyd's death was a disgraceful incident. But you don't riot. You don't steal and
+                                respond with
+                                violence.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="heroes__title align-content-center m-2 p-1">
+                        <h4>HEROES OF THE PANDEMIC</h4>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-12 col-md-4 col-lg-4 featured-story">
+                            <div class="bg-dark-light">
+                                <div class="featured-story">
+                                    <div class="category d-sm-block text-uppercase d-md-none d-lg-flex">
+                                        <a href="#" class="font-weight-bold text">PANDEMIC HEROES</a>
+                                    </div>
+                                    <div class="image">
+                                        <img class="card-img-top image-responsive" src="images/isaac.jpg" alt="new
+                                            york riots">
+                                    </div>
+                                </div>
+                                <div class="card-body">
+                                    <p class="card-title font-weight-bold text-muted">The Doctors and Nurses Crossing
+                                        the
+                                        Border Daily to
+                                        Help Asylum Seekers</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-12 col-md-4 col-lg-4 featured-story">
+                            <div class="bg-dark-light">
+                                <div class="featured-story">
+                                    <div class="category d-sm-block text-uppercase d-md-none d-lg-block">
+                                        <a href="#" class="font-weight-bold">PANDEMIC HEROES</a>
+                                    </div>
+                                    <div class="image">
+                                        <img class="card-img-top image-responsive" src="images/evan-rosenberg.jpg"
+                                            alt="new york riots">
+                                    </div>
+                                </div>
+                                <div class="card-body">
+                                    <p class="card-title font-weight-bold text-muted">The Charity Helping Vulnerable
+                                        Holocaust
+                                        Survivors During the Pandemic</p>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-12 col-md-4 col-lg-4 featured-story">
+                            <div class="bg-dark-light">
+                                <div class="featured-story">
+                                    <div class="category d-sm-block text-uppercase d-md-none d-lg-block">
+                                        <a href="#" class="font-weight-bold">PANDEMIC HEROES</a>
+                                    </div>
+                                    <div class="image">
+                                        <img class="card-img-top image-responsive" src="images/tamara-mcgovern.jpg"
+                                            alt="new york riots">
+                                    </div>
+                                </div>
+                                <div class="card-body">
+                                    <p class="card-title font-weight-bold text-muted">Women Launch Campaign Urging
+                                        People to
+                                        Donate Their Stimulus Checks</p>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="heroes__title align-content-center m-2 p-1 text-uppercase">
+                        <h4>Culture & Travel</h4>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-12 col-md-4 col-lg-4 featured-story">
+                            <div class="bg-dark-light">
+                                <div class="featured-story">
+                                    <div class="category d-sm-block text-uppercase">
+                                        <a href="#" class="font-weight-bold">George Floyd</a>
+                                    </div>
+                                    <div class="image">
+                                        <img class="card-img-top image-responsive"
+                                            src="images/washington-dc-protest.jpg" alt="new york riots">
+                                    </div>
+                                </div>
+                                <div class="card-body">
+                                    <p class="card-title font-weight-bold text-muted">Black Lives Matter Protests
+                                        Around the
+                                        World, in Photos</p>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-12 col-md-4 col-lg-4 featured-story">
+                            <div class="bg-dark-light">
+                                <div class="featured-story">
+                                    <div class="category d-sm-block text-uppercase">
+                                        <a href="#" class="font-weight-bold">George Floyd</a>
+                                    </div>
+                                    <div class="image">
+                                        <img class="card-img-top image-responsive" src="images/geroge-floyd-mural.jpg"
+                                            alt="new york riots">
+                                    </div>
+                                </div>
+                                <div class="card-body">
+                                    <p class="card-title font-weight-bold text-muted">Artists on the Internet are
+                                        Honoring
+                                        George Floyd With Striking Portraits</p>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-12 col-md-4 col-lg-4 featured-story">
+                            <div class="bg-dark-light">
+                                <div class="featured-story">
+                                    <div class="category d-sm-block text-uppercase">
+                                        <a href="#" class="font-weight-bold">Black lives matter</a>
+                                    </div>
+                                    <div class="image">
+                                        <img class="card-img-top image-responsive"
+                                            src="images/daughters-dust-criterion.jpg" alt="new york riots">
+                                    </div>
+                                </div>
+                                <div class="card-body">
+                                    <p class="card-title font-weight-bold text-muted">Movies by Black Filmmakers
+                                        Now Streaming
+                                        Free on Criterion Channel
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="signup-box mt-4 col-md-12 d-lg-none d-md-none col-lg-11">
+                            <div class="logo-title align-items-center d-flex justify-content-center">
+                                <img class="d-flex align-self-start mr-3 icon-n "
+                                    src="https://g.newsweek.com/www/images/logo-n1.svg" alt="Generic placeholder image">
+                                <div>start your day with our top 5 articles</div>
+                            </div>
+                            <form class="mt-3">
+                                <input type="text" placeholder="Email address" />
+                                <button type="submit" class="w-arrow reversed mt-3 text-uppercase">Free Sign Up</button>
+                            </form>
+                        </div>
+
+                    </div>
+                    <div class="col-sm-12">
+                        <div class="stories-title mt-0">
+                            <h3 class="text-muted"> MORE STORIES</h3>
+                        </div>
+                        <div class="media mt-4">
+                            <img class="d-flex align-self-start mr-3" src="images/dr-fauci-white-house-april-2020.jpg"
+                                alt="Generic placeholder image">
+                            <div class="media-body debate-title">
+                                <h5 class="mt-0 align-self-center font-weight-bold">Dr. Fauci Says COVID-19
+                                    Vaccine to Be
+                                    Manufactured Before Knowing It Works</h5>
+                                <p>The effectiveness of a vaccine will hopefully be confirmed by late fall
+                                    or early winter,
+                                    Dr.
+                                    Anthony Fauci tells Newsweek.</p>
+                            </div>
+                        </div>
+                        <div class="border-bottom"></div>
+                        <div class="media mt-4">
+                            <img class="d-flex align-self-start mr-3" src="images/kanye-west.jpg"
+                                alt="Generic placeholder image">
+                            <div class="media-body debate-title">
+                                <h5 class="mt-0 align-self-center font-weight-bold">Kanye West Joins Chicago
+                                    Rally,
+                                    Protester Angrily Accuses Him of Hijacking</h5>
+                                <p>The "Jesus is King" rapper, who has publically supported President Donald
+                                    Trump, made a
+                                    $2 million donation to the families of George Floyd, Ahmaud Arbrery and
+                                    Breonna.</p>
+                            </div>
+                        </div>
+                        <div class="border-bottom"></div>
+                        <div class="media mt-4">
+                            <img class="d-flex align-self-start mr-3"
+                                src="images/donald-trump-iran-nuclear-deal-jcpoa-2020.jpg"
+                                alt="Generic placeholder image">
+                            <div class="media-body debate-title">
+                                <h5 class="mt-0 align-self-center font-weight-bold">Donald Trump Calls on
+                                    Iran to 'Make the
+                                    Big Deal' Before 2020 Election</h5>
+                                <p>The president withdrew the U.S. from the Iran nuclear agreement in 2018
+                                    and has urged
+                                    other signatories to do the same, but said Thursday he still wants to
+                                    make a new deal.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="border-bottom"></div>
+                        <div class="media mt-4">
+                            <img class="d-flex align-self-start mr-3" src="images/sen-tom-cotton-r-ar.jpg"
+                                alt="Generic placeholder image">
+                            <div class="media-body debate-title">
+                                <h5 class="mt-0 align-self-center font-weight-bold">Tom Cotton Says New York
+                                    Times 'tucked
+                                    Tail' over His Op-Ed</h5>
+                                <p>The Arkansas Republican has defended his op-ed calling for military
+                                    response to George
+                                    Floyd protests..</p>
+                            </div>
+                        </div>
+                        <div class="border-bottom"></div>
+                        <div class="media mt-4">
+                            <img class="d-flex align-self-start mr-3" src="images/national-guard.jpg"
+                                alt="Generic placeholder image">
+                            <div class="media-body debate-title">
+                                <h5 class="mt-0 align-self-center font-weight-bold">Historic Number of
+                                    National Guard Troops
+                                    Active Across U.S.</h5>
+                                <p>At least 3,300 National Guard members from across 10 states have been or
+                                    are being
+                                    deployed to support the D.C. National Guard amid protests over George
+                                    Floyd's death..
+                                </p>
+                            </div>
+                        </div>
+                        <div class="border-bottom"></div>
+                        <div class="media mt-4">
+                            <img class="d-flex align-self-start mr-3" src="images/george-floyd-protests.jpg"
+                                alt="Generic placeholder image">
+                            <div class="media-body debate-title">
+                                <h5 class="mt-0 align-self-center font-weight-bold">State and City Lawmakers
+                                    Propose
+                                    Legislation to Ban Use of Tear Gas</h5>
+                                <p>Several state lawmakers and city council members from across the U.S.
+                                    have proposed
+                                    legislation to ban the use of tear gas by law enforcement, following
+                                    mass protests for
+                                    George Floyd.</p>
+                            </div>
+                        </div>
+                        <div class="border-bottom"></div>
+                        <div class="media mt-4">
+                            <img class="d-flex align-self-start mr-3" src="images/cdc-director-robert-redfield.jpg"
+                                alt="Generic placeholder image">
+                            <div class="media-body debate-title">
+                                <h5 class="mt-0 align-self-center font-weight-bold">CDC Director 'Concerned'
+                                    COVID-19
+                                    Warnings Aren't Sticking in U.S.</h5>
+                                <p>"We ask the American public to be vigilant," CDC Director Robert Redfield
+                                    said during a
+                                    hearing with congressional leaders Thursday.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="border-bottom"></div>
+                        <div class="media mt-4">
+                            <img class="d-flex align-self-start mr-3"
+                                src="images/george-floyd-sign-nyc-protest-june-4.jpg" alt="Generic placeholder image">
+                            <div class="media-body debate-title">
+                                <h5 class="mt-0 align-self-center font-weight-bold">First-Degree Murder
+                                    Charge Would Likely
+                                    Acquit Derek Chauvin, Experts Say</h5>
+                                <p>"There has never been one conviction of any white officer in the history
+                                    of this entire
+                                    state for killing an African American resident. Not one in the couple
+                                    hundred years this
+                                    state has been in existence," an organizer said.</p>
+                            </div>
+                        </div>
+                        <div class="border-bottom"></div>
+                        <div class="media mt-4">
+                            <img class="d-flex align-self-start mr-3" src="images/jefferson-davis.jpg"
+                                alt="Generic placeholder image">
+                            <div class="media-body debate-title">
+                                <h5 class="mt-0 align-self-center font-weight-bold">Alabama Lawmakers Call
+                                    for End to
+                                    Commemorating Jefferson Davis' Birthday</h5>
+                                <p>"We should not give Davis, a traitor and racist who lived in our state
+                                    for less than a
+                                    year, his own state holiday," Alabama State Representative Chris England
+                                    wrote Thursday.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="border-bottom"></div>
+                        <div class="media mt-4">
+                            <img class="d-flex align-self-start mr-3" src="images/us-firearm-sales.jpg"
+                                alt="Generic placeholder image">
+                            <div class="media-body debate-title">
+                                <h5 class="mt-0 align-self-center font-weight-bold">U.S. Gun Sales Spike
+                                    Amid Pandemic and
+                                    Protests</h5>
+                                <p>Data compiled by the FBI in 2020 has indicated that demand for firearms
+                                    is significantly
+                                    higher this year compared to 2019.</p>
+                            </div>
+                        </div>
+                        <div class="border-bottom"></div>
+                        <div class="media mt-4">
+                            <img class="d-flex align-self-start mr-3" src="images/riots-1967.jpg"
+                                alt="Generic placeholder image">
+                            <div class="media-body debate-title">
+                                <h5 class="mt-0 align-self-center font-weight-bold">Racism, Police Killings
+                                    and Riots. This
+                                    was America in 1967—and in 2020.</h5>
+                                <p>In 1967, black households earned 55 percent of what white households
+                                    earned. In 2014, it
+                                    was 61 percent. At that rate of improvement, black household incomes
+                                    should catch up in
+                                    2410—maybe.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <section class="magazine-section col-sm-12 col-md-12">
+            <div class="top-story">
+                <div class="media magazine-logo">
+                    <img class="d-flex align-self-start mr-3 icon-n" src="https://g.newsweek.com/www/images/logo-n1.svg"
+                        alt="Generic placeholder image">
+                    <div class="media-body">
+                        <h1 class="mt-0 font-weight-bold text-uppercase magazine-title d-flex align-items-center">
+                            IN THE MAGAZINE</h1>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-12 col-md-3 col-lg-3 featured-story">
+                        <div class="bg-dark-light">
+                            <div class="featured-story">
+                                <div class="category d-sm-block text-uppercase">
+                                    <a href="#" class="font-weight-bold">June 12 issue</a>
+                                </div>
+                                <div class="image">
+                                    <img class="card-img-top image-responsive" src="images/cover-june-19-26-2020.jpg"
+                                        alt="new york riots">
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title font-weight-bold text-uppercase">see all features ></h5>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="featured-story col-md-3 col-lg-3">
+                        <div class="image special">
+                            <img class="card-img-top" src="images/china-hong-kong-future-opener.jpg"
+                                alt="new york riots">
+                        </div>
+                        <div class="featured-links text-uppercase mt-4">
+                            <a href="#" class="font-weight-bold p-2">COVER</a>
+                            <a href="#" class="font-weight-bold ">POLITICS</a>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title font-weight-bold">Biden, the Moderate, Plans the Most
+                                Radical Economic Overhaul Since FDR</h5>
+                        </div>
+                    </div>
+                    <div class="featured-story col-md-3 col-lg-3">
+                        <div class="image">
+                            <img class="card-img-top" src="images/fea-mentalhealth-02-1210859071-web-banner.jpg"
+                                alt="new york riots">
+                        </div>
+                        <div class="featured-links text-uppercase mt-4">
+                            <a href="#" class="font-weight-bold p-2">Features</a>
+                            <a href="#" class="font-weight-bold ">Health</a>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title font-weight-bold">Mental Health Toll of Coronavirus
+                                Could Rival that
+                                of the Disease Itself</h5>
+                        </div>
+                    </div>
+                    <div class="featured-story col-md-3 col-lg-3">
+                        <div class="image">
+                            <img class="card-img-top" src="images/coronavirus-testing.jpg" alt="new york riots">
+                        </div>
+                        <div class="featured-links text-uppercase mt-4">
+                            <a href="#" class="font-weight-bold p-2">Periscope</a>
+                            <a href="#" class="font-weight-bold ">Health</a>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title font-weight-bold">Contact Tracing Won't Solve the
+                                Coronavirus Crisis</h5>
+                        </div>
+                    </div>
+                    <div class="featured-story col-md-3 col-lg-3">
+                        <div class="image">
+                            <img class="card-img-top" src="images/cul-cooper-banner.jpg" alt="new york riots">
+                        </div>
+                        <div class="featured-links text-uppercase mt-4">
+                            <a href="#" class="font-weight-bold p-2">Features</a>
+                            <a href="#" class="font-weight-bold ">culture</a>
+                        </div>
+                        <div class="card-body">
+                            <h3 class="card-title font-weight-bold">Comedian Goes Viral Miming Trump
+                            </h3>
+                        </div>
+                    </div>
+                    <div class="featured-story col-md-3 col-lg-3">
+                        <div class="image">
+                            <img class="card-img-top" src="images/cul-missmanners-banner.jpg" alt="new york riots">
+                        </div>
+                        <div class="featured-links text-uppercase mt-4">
+                            <a href="#" class="font-weight-bold p-2">Downtime</a>
+                            <a href="#" class="font-weight-bold ">culture</a>
+                        </div>
+                        <div class="card-body">
+                            <h3 class="card-title font-weight-bold">Miss Manners' Etiquette Lessons for
+                                Contagious Times
+                            </h3>
+                        </div>
+                    </div>
+
+                    <div class="featured-story col-md-3 col-lg-3">
+                        <div class="image">
+                            <img class="card-img-top" src="images/cul-ps-kudrow.jpg" alt="new york riots">
+                        </div>
+                        <div class="featured-links text-uppercase mt-4">
+                            <a href="#" class="font-weight-bold p-2">Downtime</a>
+                            <a href="#" class="font-weight-bold ">culture</a>
+                        </div>
+                        <div class="card-body">
+                            <h3 class="card-title font-weight-bold">Lisa Kudrow on Netflix's 'Space
+                                Force' and the
+                                'Friends' Reunion Special
+                            </h3>
+                        </div>
+                    </div>
+                    <div class="featured-story col-md-3 col-lg-3">
+                        <div class="image">
+                            <img class="card-img-top" src="images/ground-zero.jpg" alt="new york riots">
+                        </div>
+                        <div class="featured-links text-uppercase mt-4">
+                            <a href="#" class="font-weight-bold text-white p-2">IN FOCUS</a>
+                        </div>
+                        <div class="card-body m-0">
+                            <h3 class="card-title font-weight-bold">GROUND ZERO
+                            </h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="editors-pick col-sm-12 col-md-12">
+            <div class="top-story">
+                <div class="media  magazine-logo">
+                    <img class="d-flex align-self-start mr-3 icon-n "
+                        src="https://g.newsweek.com/www/images/logo-n1.svg" alt="Generic placeholder image">
+                    <div class="media-body">
+                        <h1 class="mt-0 font-weight-bold text-uppercase magazine-title d-flex align-items-center">
+                            Editor's Pick</h1>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-12 col-md-6 col-lg-3 featured-story">
+                        <div class="bg-dark-light">
+                            <div class="featured-story">
+                                <div class="category d-sm-block text-uppercase">
+                                    <a href="#" class="font-weight-bold">NEWS</a>
+                                </div>
+                                <div class="image">
+                                    <img class="card-img-top image-responsive"
+                                        src="images/meghan-markle-field-remembrance.jpg" alt="new york riots">
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <h2 class="card-title font-weight-bold">Meghan
+                                    Markle's Racism Speech
+                                    'Impossible'
+                                    Inside Royal Family, Expert says</h2>
+                                <p class="card-text">The Duchess of Sussex could not
+                                    have spoken out against the
+                                    "senseless act of racism" behind George Floyd's
+                                    death if she was still a
+                                    senior
+                                    royal, an expert tells Newsweek.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-12 col-md-6 col-lg-3 featured-story">
+                        <div class="bg-dark-light">
+                            <div class="featured-story">
+                                <div class="category d-sm-block text-uppercase">
+                                    <a href="#" class="font-weight-bold">Tech & Science</a>
+                                </div>
+                                <div class="image">
+                                    <img class="card-img-top image-responsive"
+                                        src="images/meghan-markle-field-remembrance.jpg" alt="new york riots">
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <h2 class="card-title font-weight-bold">Arctic Circle Oil Spill Moving Through
+                                    Ambarnaya
+                                    River Seen from Space</h2>
+                                <p class="card-text">Russia declared a state of emergency after 20,000 tonnes of
+                                    diesel
+                                    leaked into the river
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md-6 col-lg-3 featured-story">
+                        <div class="bg-dark-light">
+                            <div class="featured-story">
+                                <div class="category d-sm-block text-uppercase">
+                                    <a href="#" class="font-weight-bold">Essays</a>
+                                </div>
+                                <div class="image">
+                                    <img class="card-img-top image-responsive"
+                                        src="images/mosul-iraq-us-troop-withdraw.jpg" alt="new york riots">
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <h2 class="card-title font-weight-bold">'In Searching for Dead ISIS Fighters in
+                                    Iraq, I
+                                    Found Refuge in My Friends'</h2>
+                                <p class="card-text">Along the road I am always looking ahead, wondering whether
+                                    each
+                                    crumpled piece of trash is hiding a roadside bomb. I realize that were we to
+                                    hit a
+                                    landmine, it is likely that my bulletproof vest or helmet would not save me.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md-6 col-lg-3 featured-story">
+                        <div class="bg-dark-light">
+                            <div class="featured-story">
+                                <div class="category d-sm-block text-uppercase">
+                                    <a href="#" class="font-weight-bold">Tech & Science</a>
+                                </div>
+                                <div class="image">
+                                    <img class="card-img-top image-responsive"
+                                        src="images/grand-prismatic-spring-yellowstone.jpg" alt="new york riots">
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <h2 class="card-title font-weight-bold">Yellowstone Volcano's Biggest Ever
+                                    Super-Eruption Discovered</h2>
+                                <p class="card-text">The eruption was so big it covered an area the size of New
+                                    Jersey
+                                    in volcanic glass.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md-6 col-lg-3 featured-story">
+                        <div class="bg-dark-light">
+                            <div class="featured-story">
+                                <div class="category d-sm-block text-uppercase">
+                                    <a href="#" class="font-weight-bold">Sports</a>
+                                </div>
+                                <div class="image">
+                                    <img class="card-img-top image-responsive" src="images/mlb-los-angeles-dodgers.jpg"
+                                        alt="new york riots">
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <h2 class="card-title font-weight-bold">Los Angeles Dodgers Lit Up Their Stadium
+                                    to Honor George Floyd</h2>
+                                <p class="card-text">The overwhelming majority, if not all, of the police agree
+                                    that
+                                    George Floyd's death was a disgraceful incident. But you don't riot. You
+                                    don't steal
+                                    and
+                                    respond with
+                                    violence.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md-6 col-lg-3 featured-story">
+                        <div class="bg-dark-light">
+                            <div class="featured-story">
+                                <div class="category d-sm-block text-uppercase">
+                                    <a href="#" class="font-weight-bold">Sports</a>
+                                </div>
+                                <div class="image">
+                                    <img class="card-img-top image-responsive"
+                                        src="images/drew-brees-new-orleans-saints.jpg" alt="new york riots">
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <h2 class="card-title font-weight-bold">MLK's Daughter Tells Brees Only Kind of
+                                    Kneeling
+                                    He Should Be Bothered By</h2>
+                                <p class="card-text">The New Orleans Saints QB has been widely criticized for
+                                    suggesting
+                                    he'd never agree with players kneeling during the national anthem.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md-6 col-lg-3 featured-story">
+                        <div class="bg-dark-light">
+                            <div class="featured-story">
+                                <div class="category d-sm-block text-uppercase">
+                                    <a href="#" class="font-weight-bold">Tech & Science</a>
+                                </div>
+                                <div class="image">
+                                    <img class="card-img-top image-responsive" src="images/mangrove-forest.jpg"
+                                        alt="new york riots">
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <h2 class="card-title font-weight-bold">Mangrove Forests Won't Survive Future
+                                    Sea-Level
+                                    Rise Without Emission Cuts</h2>
+                                <p class="card-text">Mangrove forests provide vital ecosystem services to
+                                    humans, plants
+                                    and animals across the globe.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md-6 col-lg-3 featured-story">
+                        <div class="bg-dark-light">
+                            <div class="featured-story">
+                                <div class="category d-sm-block text-uppercase">
+                                    <a href="#" class="font-weight-bold">culture</a>
+                                </div>
+                                <div class="image">
+                                    <img class="card-img-top image-responsive" src="images/beyonce-solange.jpg"
+                                        alt="new york riots">
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <h2 class="card-title font-weight-bold">Beyoncé Urges Fans to Stay 'Aligned and
+                                    Focused', Solange Calls for Justice</h2>
+                                <p class="card-text">The 'Homecoming' star made the plea as all the officers
+                                    involved in
+                                    the death of George Floyd have now been charged.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="more-news d-lg-block">
+            <div class="heroes__title align-content-center m-2 p-1 mt-4 text-uppercase">
+                <h1 class="block-title red">us</h1>
+            </div>
+            <div class="row top-story">
+                <div class="featured-story col-md-4 col-lg-4">
+                    <div class="image">
+                        <img class="card-img-top image-responsive" src="images/bush-biden.jpg" alt="new york riots">
+                    </div>
+                    <div class="card-body">
+                        <h2 class="card-title font-weight-bold">Former George W. Bush Staffers Form PAC to
+                            Back Joe Biden</h2>
+                    </div>
+                </div>
+
+                <div class="featured-story col-md-4 col-lg-4">
+                    <div class="image">
+                        <img class="card-img-top image-responsive" src="images/donald-trump_walk.jpg"
+                            alt="new york riots">
+                    </div>
+                    <div class="card-body">
+                        <h2 class="card-title font-weight-bold">What Does The Third Amendment Say and Why Do
+                            People Think It's Relevant?</h2>
+                    </div>
+                </div>
+                <div class="col-md-4 col-lg-4 col-lg-4 ">
+                    <div class="media mt-4 pb-4 border-none border-bottom">
+                        <img class="img-resize d-flex align-self-start mr-3"
+                            src="images/dr-fauci-white-house-april-2020.jpg" alt="Generic placeholder image">
+                        <div class="media-body">
+                            <h2 class="mt-0 align-self-center font-weight-bold">Arizona Reports Record Single-Day Rise
+                                in Coronavirus Cases and ER Visits</h2>
+                        </div>
+                    </div>
+                    <div class="media mt-4 pb-4 border-none border-bottom">
+                        <img class="d-flex align-self-start mr-3" src="images/coronavirus-reopening.jpg"
+                            alt="Generic placeholder image">
+                        <div class="media-body ">
+                            <h2 class="mt-0 align-self-center font-weight-bold">13 States Report Spikes in
+                                Coronavirus Cases
+                                After Reopening Economy</h2>
+                        </div>
+                    </div>
+                    <div class="media mt-4 mb-5 pb-4 border-none border-bottom">
+                        <img class="d-flex align-self-start mr-3" src="images/george-floyd-memorial.jpg"
+                            alt="Generic placeholder image">
+                        <div class="media-body">
+                            <h2 class="mt-0 align-self-center font-weight-bold">Minneapolis Bans All Chokeholds
+                                By Police</h2>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        <section class="world-section d-lg-block">
+            <div class="heroes__title align-content-center m-2 p-1 mt-4 text-uppercase">
+                <h1 class="block-title red">world</h1>
+            </div>
+            <div class="row top-story">
+                <div class="featured-story col-md-4 col-lg-4 col-lg-4">
+                    <div class="image">
+                        <img class="card-img-top image-responsive" src="images/protesters-london.jpg"
+                            alt="new york riots">
+                    </div>
+                    <div class="card-body">
+                        <h2 class="card-title font-weight-bold">U.K. Health Secretary Advises People to
+                            Avoid Protests Over
+                            COVID-19 Fears</h2>
+                    </div>
+                </div>
+                <div class="featured-story col-md-4 col-lg-4 col-lg-4">
+                    <div class="image">
+                        <img class="card-img-top image-responsive"
+                            src="images/china-ipac-lawmakers-politicians-unite-coalition-pressure.jpg"
+                            alt="new york riots">
+                    </div>
+                    <div class="card-body">
+                        <h2 class="card-title font-weight-bold">From U.S. to Japan, Lawmakers Unite to End
+                            'Naive' China
+                            Strategy</h2>
+                    </div>
+                </div>
+                <div class="col-md-4 col-lg-4 col-lg-4 justify-content-space-between d-block">
+                    <div class="media mt-0 pb-4 border-none border-bottom">
+                        <img class="img-resize d-flex align-self-start mr-3" src="images/hong-kong-protests.jpg"
+                            alt="Generic placeholder image">
+                        <div class="media-body">
+                            <h2 class="mt-0 align-self-center font-weight-bold">Hong Kong Police Allow Thousands
+                                to Defy
+                                Tiananmen Vigil Ban</h2>
+                        </div>
+                    </div>
+                    <div class="media mt-4 pb-4 border-none border-bottom">
+                        <img class="d-flex align-self-start mr-3" src="images/boris-johnson-approval-ratings.jpg"
+                            alt="Generic placeholder image">
+                        <div class="media-body">
+                            <h2 class="mt-0 align-self-center font-weight-bold">U.K. Embassy Raises Issue of
+                                Police Conduct
+                                in Protests to U.S. Officials</h2>
+                        </div>
+                    </div>
+                    <div class="media mt-4 mb-5 pb-4 border-none border-bottom">
+                        <img class="d-flex align-self-start mr-3" src="images/mexico-protest.jpg"
+                            alt="Generic placeholder image">
+                        <div class="media-body">
+                            <h2 class="mt-0 align-self-center font-weight-bold">Mexico Protester Sets
+                                Officer on
+                                Fire Amid
+                                Outrage Over Death in Custody</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="world-section d-md-none d-lg-block">
+            <div class="heroes__title align-content-center m-2 p-1 text-uppercase">
+                <h1 class="block-title red">business</h1>
+            </div>
+            <div class="row top-story">
+                <div class="featured-story col-md-4 col-lg-4 col-lg-4">
+                    <div class="image">
+                        <img class="card-img-top image-responsive"
+                            src="images/donald-trump-jr-cpac-conservatives-president-son.jpg" alt="new york riots">
+                    </div>
+                    <div class="card-body">
+                        <h2 class="card-title font-weight-bold">Don Jr. Set His Sights on Big Tech Months
+                            Before His
+                            Father's Twitter Feud</h2>
+                    </div>
+                </div>
+                <div class="featured-story  col-md-4 col-lg-4 col-lg-4">
+                    <div class="image">
+                        <img class="card-img-top image-responsive" src="images/trump-obama-stocks.jpg"
+                            alt="new york riots">
+                    </div>
+                    <div class="card-body">
+                        <h2 class="card-title font-weight-bold">Attention Congress: Why Federal Economic
+                            Benefits Are Needed
+                            Now More Than Ever |Opinion</h2>
+                    </div>
+                </div>
+                <div class="col-md-4 col-lg-4 col-lg-4">
+                    <div class="media mt-0 mb-5 pb-4 border-none border-bottom">
+                        <img class="img-resize d-flex align-self-start mr-3" src="images/trump-obama-stocks.jpg"
+                            alt="Generic placeholder image">
+                        <div class="media-body">
+                            <h2 class="mt-0 align-self-center font-weight-bold">Trump's Stock Market Gains Once
+                                Again Surpass
+                                Those of Obama</h2>
+                        </div>
+                    </div>
+                    <div class="media mt-4 mb-5 pb-4 border-none border-bottom">
+                        <img class="d-flex align-self-start mr-3" src="images/trump-campaign-store-biden-black.jpg"
+                            alt="Generic placeholder image">
+                        <div class="media-body">
+                            <h2 class="mt-0 align-self-center font-weight-bold">Trump Store Rolls Out 'You Ain't
+                                Black' T-shirts
+                                Referencing Biden Remark</h2>
+                        </div>
+                    </div>
+                    <div class="media mt-4 mb-5">
+                        <img class="d-flex align-self-start mr-3" src="images/trump-national-doral-miami.jpg"
+                            alt="Generic placeholder image">
+                        <div class="media-body">
+                            <h2 class="mt-0 align-self-center font-weight-bold">Trump Organization Lays off
+                                250
+                                Resort Employees
+                                Due to Pandemic</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="world-section d-lg-block">
+            <div class="heroes__title align-content-center m-2 p-1 text-uppercase">
+                <h1 class="block-title red">tech & science</h1>
+            </div>
+            <div class="row top-story">
+                <div class="featured-story col-md-4 col-lg-4 col-lg-4">
+                    <div class="image">
+                        <img class="card-img-top image-responsive" src="images/buckyball.jpg" alt="new york riots">
+                    </div>
+                    <div class="card-body">
+                        <h2 class="card-title font-weight-bold">Fascinating Slow-Motion Video of Single
+                            Molecules Captured
+                            by Scientists</h2>
+                    </div>
+                </div>
+                <div class="featured-story col-md-4 col-lg-4 col-lg-4">
+                    <div class="image">
+                        <img class="card-img-top image-responsive" src="images/ais-signals.jpg" alt="new york riots">
+                    </div>
+                    <div class="card-body">
+                        <h2 class="card-title font-weight-bold">Phantom Boats Drawing 'GPS Crop Circles'
+                            Appear Off San
+                            Francisco Coast
+                        </h2>
+                    </div>
+                </div>
+                <div class="col-md-4 col-lg-4 col-lg-4">
+                    <div class="media mt-0 mb-5 pb-4 border-none border-bottom">
+                        <img class="img-resize d-flex align-self-start mr-3" src="images/great-white-shark.jpg"
+                            alt="Generic placeholder image">
+                        <div class="media-body">
+                            <h2 class="mt-0 align-self-center font-weight-bold">False Bay Great Whites May Not
+                                Have Left Because
+                                of Killer Whale Attacks</h2>
+                        </div>
+                    </div>
+                    <div class="media mt-4 mb-5 pb-4 border-none border-bottom">
+                        <img class="d-flex align-self-start mr-3" src="images/penumbral-lunar-eclipse.jpg"
+                            alt="Generic placeholder image">
+                        <div class="media-body">
+                            <h2 class="mt-0 align-self-center font-weight-bold">How and When to Watch the
+                                Strawberry Full Moon
+                                Eclipse Online</h2>
+                        </div>
+                    </div>
+                    <div class="media mt-4 mb-5 pb-4 border-none border-bottom">
+                        <img class="d-flex align-self-start mr-3" src="images/qanon.jpg"
+                            alt="Generic placeholder image">
+                        <div class="media-body">
+                            <h2 class="mt-0 align-self-center font-weight-bold">K-Pop Fans Flood QAnon Twitter
+                                Hashtags to
+                                Silence Conspiracy Theorists</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="world-section d-lg-block">
+            <div class="heroes__title align-content-center m-2 p-1 text-uppercase">
+                <h1 class="block-title red">culture</h1>
+            </div>
+            <div class="row top-story">
+                <div class="featured-story col-md-4 col-lg-4 col-lg-4">
+                    <div class="image">
+                        <img class="card-img-top image-responsive" src="images/mtg-core-2021.jpg" alt="new york riots">
+                    </div>
+                    <div class="card-body">
+                        <h2 class="card-title font-weight-bold">Magic: The Gathering Gets New and Reissued
+                            Planeswalkers In
+                            Core Set 2021</h2>
+                    </div>
+
+                </div>
+                <div class="featured-story col-md-4 col-lg-4 col-lg-4">
+                    <div class="image">
+                        <img class="card-img-top image-responsive" src="images/rupauls-drag-race-all-stars-5-cast.jpg"
+                            alt="new york riots">
+                    </div>
+                    <div class="card-body">
+                        <h2 class="card-title font-weight-bold">The 'RuPaul's Drag Race All Stars 5' major
+                            rules shake-up
+                            explained</h2>
+                    </div>
+                </div>
+                <div class="col-md-4 col-lg-4 col-lg-4">
+                    <div class="media mt-0 mb-5 pb-4 border-none border-bottom">
+                        <img class="img-resize d-flex align-self-start mr-3" src="images/13-reasons-why-season-4.png"
+                            alt="Generic placeholder image">
+                        <div class="media-body">
+                            <h2 class="mt-0 align-self-center font-weight-bold">'13 Reasons Why': Everything You
+                                Need to
+                                Remember Before Season 4 Starts</h2>
+                        </div>
+                    </div>
+                    <div class="media mt-4 mb-5 pb-4 border-none border-bottom">
+                        <img class="d-flex align-self-start mr-3"
+                            src="images/who-martin-gugino-75-year-old-pushed-police-longtime-protester.jpg"
+                            alt="Generic placeholder image">
+                        <div class="media-body">
+                            <h2 class="mt-0 align-self-center font-weight-bold">Who Is Martin Gugino?
+                                75-Year-old Pushed by
+                                Police Is a Longtime Protester</h2>
+                        </div>
+                    </div>
+                    <div class="media mt-4 mb-5 pb-4 border-none border-bottom">
+                        <img class="d-flex align-self-start mr-3" src="images/alexis-ohanian.jpg"
+                            alt="Generic placeholder image">
+                        <div class="media-body">
+                            <h2 class="mt-0 align-self-center font-weight-bold">Here's Why Reddit Co-Founder
+                                Alexis Ohanian
+                                Stepped Down</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="world-section d-lg-block">
+            <div class="heroes__title align-content-center m-2 p-1 text-uppercase">
+                <h1 class="block-title red">sports</h1>
+            </div>
+            <div class="row top-story">
+                <div class="featured-story col-md-4 col-lg-4 col-lg-4">
+
+                    <div class="image">
+                        <img class="card-img-top image-responsive" src="images/wwe-nxt-takeover-your-house-logo.jpg"
+                            alt="new york riots">
+                    </div>
+                    <div class="card-body">
+                        <h2 class="card-title font-weight-bold">NXT Takeover: In Your House Streaming
+                            Details</h2>
+                    </div>
+                </div>
+                <div class="featured-story col-md-4 col-lg-4 col-lg-4">
+                    <div class="image">
+                        <img class="card-img-top image-responsive" src="images/zion-williamson-new-orleans-pelicans.jpg"
+                            alt="new york riots">
+                    </div>
+                    <div class="card-body">
+                        <h2 class="card-title font-weight-bold">NBA Standings As 22 Teams to Vie for
+                            Playoffs in Season
+                            Return
+                        </h2>
+                    </div>
+                </div>
+                <div class="col-md-4 col-lg-4 col-lg-4">
+                    <div class="media mt-0 mb-5 pb-4 border-none border-bottom">
+                        <img class="img-resize d-flex align-self-start mr-3" src="images/nba-adam-silver.jpg"
+                            alt="Generic placeholder image">
+                        <div class="media-body">
+                            <h2 class="mt-0 align-self-center font-weight-bold">The NBA Coronavirus Restart
+                                Plan, Dates, Venues
+                                and Format Explained</h2>
+                        </div>
+                    </div>
+                    <div class="media mt-4 mb-5 pb-4 border-none border-bottom">
+                        <img class="d-flex align-self-start mr-3" src="images/jake-fromm-georgia.jpg"
+                            alt="Generic placeholder image">
+                        <div class="media-body">
+                            <h2 class="mt-0 align-self-center font-weight-bold">Jake Fromm and Drew Brees
+                                'Aren't Really Sorry,'
+                                Says Jamal Adams
+                            </h2>
+                        </div>
+                    </div>
+                    <div class="media mt-4 mb-5 pb-4 border-none border-bottom">
+                        <img class="d-flex align-self-start mr-3" src="images/odell-beckham-jarvis-landry.jpg"
+                            alt="Generic placeholder image">
+                        <div class="media-body">
+                            <h2 class="mt-0 align-self-center font-weight-bold">NFL Players Ask the League to Be
+                                Heard Over
+                                Black Lives Matter</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="row">
+            <div class="subscribe-section col-sm-12 container-fluid col-lg-8">
+                <div class="box-title">
+                    Subscribe
+                </div>
+                <div class="row subscribe-img">
+                    <div class="subscribe-image-container col-md-5">
+                        <img class="subscribe-img-bottom" src="images/may-29-june-06-2020-cover.jpg" alt="may 22 cover">
+                        <img class="subscribe-img-top" src="images/cover-june-12-2020.jpg" alt="may 29 cover">
+                    </div>
+                    <div class="subscribe-title col-md-7">
+                        <h4>In-depth Stories You Don't See Elsewhere About Topics You Want to Read!</h4>
+                        <p>
+                            All Access + Weekly Delivery.
+                            <br>
+                            Choose A Membership That's Perfect for You!
+                        </p>
+                        <button type="submit" class="reversed button w-arrow mt-3">
+                            SUBSCRIBE >
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-lg-4 d-flex flex-column">
+                <div class="box-title">newsletter</div>
+                <div class="newsletter border-none d-flex flex-grow-1">
+                    <div class="pic-responsive d-none d-md-block flex-shrink-0">
+                        <img src="https://d.newsweek.com/en/full/1541302/starting5-homepage.png?w=397&h=265&q=90&f=742bce9a6f72dd8f19ba2e7fd5db06e5"
+                            alt="Newsletter side image" />
+                    </div>
+                    <div class="newsletter-content">
+                        <h4>The Starting 5</h4>
+                        <p>See why nearly a quarter of a million subscribers begin their day with the Starting 5</p>
+                        <form>
+                            <input type="text" placeholder="Email address" />
+                            <button type="submit" class="reversed button w-arrow mt-3">Free sign up</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <footer class="container-fluid">
+            <div class="footer-img col-sm-12 col-md-12 col-lg-12 row align-items-end">
+                <div class="footer-logo col-md-8 row align-items-end">
+                    <a class="footer-brand">
+                        <svg version="1.1" class="top-logo" xmlns="http://www.w3.org/2000/svg"
+                            xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 395.6 60"
+                            style="enable-background: new 0 0 395.6 60;" xml:space="preserve">
+                            <g>
+                                <path class="st0"
+                                    d="M58.7,10.8h-5.6v48.3H42.8l-25.1-33v22.1h5.6v10.8H0V48.3h5.6V10.8H0V0h17.6L41,30.7V10.8h-5.6V0h23.2	L58.7,10.8L58.7,10.8z M95.8,38c0,0.9,0,1.8-0.1,2.7H70.3c-0.7,8.2,2.4,10.6,7.1,10.6c3.9,0,6.9-2.6,6.9-6.6h11	c-0.3,7.2-4,15.4-18.5,15.4c-14.5,0-21.3-10.5-21.3-22.1c0-10.5,7-21.6,21-21.6C89.9,16.3,95.8,25.6,95.8,38 M159,27.3h-3.7	l-9.4,31.8h-12.5l-5.9-17.4l-5.3,17.4h-12.8L98.8,27.4h-3.7V16.6h22.1v10.7h-5.6l5.8,16.9l7.6-27.6h6.8l9.3,27.6l5-16.9h-5.6V16.6	H159L159,27.3L159,27.3z M174.5,27.8c0,1.5,1.2,2.5,5.4,3.9l6,2c5.5,1.8,12.1,5.9,12.1,13.4c0,8.8-6.6,13-14.7,13	c-6.5,0-11.5-3.2-12.9-4.6V59h-10.8V44.4h10.6c0.3,4.8,4.6,7.3,8.5,7.3c3.2,0,4.7-1.4,4.7-3c0-2-1.2-3.1-6.5-4.8l-5.3-1.8	c-5.4-1.7-11.4-5.7-11.4-12.8c0-8.7,7.7-13.1,14.3-13.1c6.8,0,10.1,1.9,11.8,3.8l0.1-3.3H197v13.3h-11.2c-0.2-3.6-3.7-5.2-7.2-5.2	C175.8,24.8,174.5,26.1,174.5,27.8 M262.8,27.3h-3.7l-9.4,31.8h-12.5l-5.9-17.4L226,59.1h-12.8l-10.6-31.7h-3.7V16.6h22.1v10.7	h-5.6l5.8,16.9l7.6-27.6h6.8l9.3,27.7l5-16.9h-5.6V16.6h18.5V27.3z M302,37.9c0,0.9,0,1.8-0.1,2.7h-25.4	c-0.7,8.2,2.4,10.6,7.1,10.6c3.9,0,6.9-2.6,6.9-6.6h11c-0.3,7.2-4,15.4-18.5,15.4c-14.5,0-21.3-10.5-21.3-22.1	c0-10.5,7-21.6,21-21.6C296.1,16.2,302,25.5,302,37.9 M343.9,37.8c0,0.9,0,1.8-0.1,2.7h-25.4c-0.7,8.2,2.4,10.6,7.1,10.6	c3.9,0,6.9-2.6,6.9-6.6h11c-0.3,7.2-4,15.4-18.5,15.4c-14.5,0-21.3-10.5-21.3-22.1c0-10.5,7-21.6,21-21.6	C338,16.1,343.9,25.4,343.9,37.8 M389.9,59h-12.8l-13.3-17.3l-4.3,3.2v3.4h3.8V59h-19.6V48.3h3.7V10.6h-5.6V0h17.8v33.9l8.9-6.5	h-5.6V16.6h23.9v10.8h-3.7l-9.3,7l10.7,13.9h5.6L389.9,59L389.9,59z M395.6,56.6c0,0.5-0.1,0.9-0.4,1.2c-0.2,0.4-0.5,0.7-0.9,0.9	c-0.4,0.2-0.8,0.4-1.3,0.4c-0.5,0-0.9-0.1-1.2-0.4c-0.4-0.2-0.7-0.5-0.9-0.9c-0.2-0.4-0.4-0.8-0.4-1.2c0-0.5,0.1-0.9,0.4-1.2	c0.2-0.4,0.5-0.7,0.9-0.9c0.4-0.2,0.8-0.4,1.2-0.4c0.5,0,0.9,0.1,1.3,0.4c0.4,0.2,0.7,0.5,0.9,0.9	C395.5,55.8,395.6,56.2,395.6,56.6 M394.6,58c0.4-0.4,0.6-0.9,0.6-1.4c0-0.6-0.2-1-0.6-1.4s-0.9-0.6-1.4-0.6s-1,0.2-1.4,0.6	c-0.4,0.4-0.6,0.9-0.6,1.4c0,0.6,0.2,1,0.6,1.4c0.4,0.4,0.9,0.6,1.4,0.6S394.2,58.4,394.6,58 M393.6,56.8c0.1,0.1,0.2,0.1,0.2,0.1	c0.1,0.1,0.2,0.2,0.2,0.3c0,0,0.2,0.3,0.4,0.8h-0.8c-0.3-0.5-0.4-0.8-0.5-0.9c-0.1-0.1-0.2-0.2-0.3-0.2c0,0-0.1,0-0.1,0v1.1h-0.6	v-2.6h1.2c0.4,0,0.6,0.1,0.7,0.2c0.2,0.2,0.2,0.3,0.2,0.6c0,0.2-0.1,0.4-0.2,0.5C393.9,56.6,393.8,56.7,393.6,56.8 M393.5,56.3	c0.1-0.1,0.1-0.2,0.1-0.3s-0.1-0.2-0.1-0.3c-0.1-0.1-0.2-0.1-0.4-0.1h-0.3v0.7h0.3C393.3,56.4,393.4,56.4,393.5,56.3 M318.4,33.5	h13.9c0-6-3.9-8.4-6.8-8.4C322.1,25.2,318.6,27.9,318.4,33.5 M276.5,33.6h13.9c0-6-3.9-8.4-6.8-8.4C280.3,25.2,276.8,28,276.5,33.6 M70.3,33.7h13.9c0-6-3.9-8.4-6.8-8.4C74.1,25.3,70.6,28.1,70.3,33.7">
+                                </path>
+                            </g>
+                        </svg>
+                    </a>
+                    <p class="copyright col-sm-12 col-md">
+                        &copy; 2020 NewsWeek
+                    </p>
+                </div>
+                <ul class="footer-links-social col-md-4 row justify-content-md-end">
+                    <li><a href="#" class="social text-muted"><i class="fab fa-facebook-square"></i></a>
+                    </li>
+                    <li><a href="#" class="social text-muted"><i class="fab fa-twitter"></i></a>
+                    </li>
+                    <li><a href="#" class="social text-muted"><i class="fab fa-instagram-square"></i></a>
+                    </li>
+                    <li><a href="#" class="social text-muted"><i class="fab fa-tumblr"></i></a>
+                    </li>
+                    <li><a href="#" class="social text-muted"><i class="fab fa-linkedin-in"></i></a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer-editions d-flex flex-wrap pt-6">
+                <div class="editions d-flex">
+                    <label style="margin-top: 5px; margin-right: 15px;">
+                        <strong>Editions : </strong>
+                    </label>
+                    <ul class="menu">
+                        <li class="first leaf"><a href="#" class="mt-5">U.S. Edition</a></li>
+                        <li><a href="#">日本</a></li>
+                        <li><a href="#">Pakistan</a></li>
+                        <li><a href="#">Polska</a></li>
+                        <li><a href="#">Romania</a></li>
+
+                    </ul>
+                </div>
+                <div class="editions d-flex">
+                    <ul class="menu">
+                        <li class="first leaf"><a href="#">About US</a></li>
+                        <li><a href="#">Corrections</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#">Editorial Guidelines</a></li>
+                        <li><a href="#">Advertise</a></li>
+                        <li><a href="#">Copyright</a></li>
+                        <li><a href="#">Terms & Conditions</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Cookie Policy</a></li>
+                        <li><a href="#">Terms of Sale</a></li>
+                        <li><a href="#">Archive</a></li>
+                        <li><a href="#">Announcements</a></li>
+                        <li><a href="#">Consent preferences</a></li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
+    </main>
+</body>
+
+</html>
